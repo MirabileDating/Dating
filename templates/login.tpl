@@ -7,10 +7,7 @@
 	{{ include('templates/rightbar.tpl') }}
 </div>
 <div id="content">
-<form action="login_fb.php" method="post">
- <input type="submit" name="submit" class="button_facebook" value="{{LOGIN_FACEBOOK}}"/>
- </form>
-  
+
      
 
 </p>
