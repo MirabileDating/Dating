@@ -14,6 +14,7 @@ mods:
 *Blitz
 *Geoip
 
+
 SQL:
 CREATE DATABASE IF NOT EXISTS `dating` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `dating`;
