@@ -251,8 +251,11 @@ class View extends Blitz {
 			'H3'=>_('online dating, dating, love, online sex, sex, free dating, android dating, matchmaking, mobile dating'),'H9'=>_('Mirabile'),  'SH4'=>_('Start'),
 			'H8'=>_('Start page'),'SH5'=>_('Logout'),'SH7'=>_('Register'),'SH6'=>_('Login')
 		 ));
-		 //Sidebar
+		 //Left Sidebar
 		$this->set(array('logged_in'=>$logged_in,'S1'=>_('Menu'),'S2' =>_('Your matches'),'S3'=>_('Messages'),'S7'=>_('Profile'),'S9'=>_('Change password')));
+
+		//Right Sidebar
+		$this->set(array('logged_in'=>$logged_in,'RS1'=>_('New profiles'),'RS2' =>_('Last Logged in'),'RS3' =>_('Need to be logged in')));
 
 		//Footer
 		$this->set(array('F1'=>_('Onnea - dating'),'F3' => _('Copyright&copy;'),'F4' => _('Contact us'),'F2' => _('http://www.onnea.net/dating'),'F5' => _('Terms of Service'),'F6' => _('Privacy Policy')));

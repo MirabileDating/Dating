@@ -1,14 +1,13 @@
-<h3>{{S1}}</h3>
+
 
 {{IF logged_in}}
-<ul>
-	<li>{{SH4}}</li>
-</ul>
+<h3>{{RS1}}</h3>
+<hr size="1" />
+<h3>{{RS2}}</h3>
 {{ELSE}}
-<ul>
-		<li>{{ SH6 }}</li>
+<h3>{{RS3}}</h3>
+<hr size="1" />
 
-</ul>
 {{END loggedin}}
 
 
