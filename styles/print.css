@@ -1,0 +1,29 @@
+<!--
+/* It is common to set printer friendly styles such as a white background with black text. */
+body {
+  background-color: #fff;
+  background-image: none;
+  border-color: #000; /* Sets the border color properties for an element using shorthand notation */
+  color: #000;
+}
+-->
+</style>
+<!--[if IE 5]>
+<style type="text/css"> 
+/* IE 5 does not use the standard box model, so the column widths are overidden to render the page correctly. */
+#outerWrapper #contentWrapper #leftColumn1 {
+  width: 170px;
+}
+#outerWrapper #contentWrapper #rightColumn1 {
+  width: 170px;
+}
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* The proprietary zoom property gives IE the hasLayout property which addresses several bugs. */
+#outerWrapper #contentWrapper #content {
+  zoom: 1;
+}
+</style>
+<![endif]-->

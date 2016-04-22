@@ -12,29 +12,12 @@
 <meta name="revisit-after" content="14" />
 
 <base href="{{ OAC_SERVER_PATH }}" />
-<link href="styles/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles/all.css" rel="stylesheet" type="text/css" media="all" />
+<link href="styles/print.css" rel="stylesheet" type="text/css" media="print" />
 </head>
 <body>
 
-<div id="pageContainer">
+<div id="outerWrapper">
   <div id="header">
-  </div>
-  <div id="navcontainer" >
-    <ul id="navlist">
-		
-{{IF logged_in}}
-
-		<li{{IF index}} class="active"{{END index}}><a href="member.php" class="topnavlink">{{SH4}}</a></li>
-		<li><a href="login.php?logoff=1">{{SH5}}</a></li>
-
-{{ELSE}}
-
-		<li{{IF index}} class="active"{{END index}}><a href="index.php" class="topnavlink">{{H8}}</a></li>
-		<li{{IF register}} class="active"{{END register}}><a href="register.php" class="topnavlink">{{SH7}}</a></li>
-
-		<li{{IF login}} class="active"{{END login}}><a href="login.php" class="topnavlink">{{SH6}}</a></li>
-
-{{END logged_in}}
-
-    </ul>
+	<center>PHP dating script</center>
   </div>

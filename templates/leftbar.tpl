@@ -1,6 +1,5 @@
 <h3>{{S1}}</h3>
 
-<div id="navContainer">
 {{IF logged_in}}
 <ul>
 	<li><a href="member.php">{{SH4}}</a></li>
@@ -16,6 +15,5 @@
 </ul>
 {{END loggedin}}
 
-</div>
 
 
