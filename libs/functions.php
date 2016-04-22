@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
 define('ROOT_DIRECTORY', dirname(__FILE__).'/');
 include_once ROOT_DIRECTORY.'db.inc.php';
 if (!isset($_SESSION)) {
