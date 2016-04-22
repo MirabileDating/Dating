@@ -1,5 +1,5 @@
-# Dating script
-Online dating script based on MariaDB/Mysql, PHP, Blitz template engine and geoip
+# PHP Dating script
+Online php dating script based on MariaDB/Mysql, PHP, Blitz template engine and geoip
 
 Feel free to join development
 
