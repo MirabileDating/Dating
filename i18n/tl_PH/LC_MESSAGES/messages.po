@@ -1,0 +1,496 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "Like"
+msgstr "Tulad"
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "No"
+msgstr "Hindi"
+
+#: /home/html/love/member2.php:21 /home/html/love/member.php:21
+msgid "No new profiles near you, look back later"
+msgstr ""
+"Walang mga bagong profile na malapit sa iyo, tumingin muli sa ibang "
+"pagkakataon"
+
+#: /home/html/love/register.php:43 /home/html/love/register.php:45
+msgid "Registered successfully"
+msgstr "Matagumpay Rehistradong"
+
+#: /home/html/love/register.php:59
+msgid "Give a valid name without space or special characters."
+msgstr "Magbigay ng isang wastong pangalan na walang puwang o espesyal na character."
+
+#: /home/html/love/register.php:63
+msgid "Give a valid email."
+msgstr "Magbigay ng isang wastong email."
+
+#: /home/html/love/register.php:67
+msgid "That email is already in use."
+msgstr "Email na ito ay kasalukuyang ginagamit."
+
+#: /home/html/love/register.php:71
+msgid "Invalid gender"
+msgstr "Di-wastong kasarian"
+
+#: /home/html/love/register.php:75
+msgid "Invalid password"
+msgstr "Di wastong password"
+
+#: /home/html/love/register.php:79
+msgid "Invalid birthday"
+msgstr "Di-wastong petsa ng kapanganakan"
+
+#: /home/html/love/register.php:103
+msgid "Register a new user"
+msgstr "Magrehistro ng isang bagong user"
+
+#: /home/html/love/register.php:104
+msgid ""
+"Before you can join, you must give your name, age and email. Your email can "
+"not be seen. Your name and age is visible. The password is sent to your "
+"email"
+msgstr ""
+"Bago ka maaaring sumali, kailangan mong ibigay ang iyong pangalan, edad at "
+"email. Ang iyong email ay hindi makikita. Ang iyong pangalan at edad ay "
+"nakikita. Ang password ay ipapadala sa iyong email"
+
+#: /home/html/love/register.php:104
+msgid "Join now and find someone."
+msgstr "Sumali ngayon at makahanap ng isang tao."
+
+#: /home/html/love/register.php:105
+msgid ""
+"Register with <a href=\"http://www.facebook.com\">Facebook</a> or <a "
+"href=\"http://www.vk.com\">VK.com</a>."
+msgstr ""
+"Magrehistro sa <a href=\"http://www.facebook.com\"> Facebook </a> o <a "
+"href=\"http://www.vk.com\"> VK.com </a>."
+
+#: /home/html/love/message.php:43
+msgid "Matches"
+msgstr "Makipag-ugnay sa"
+
+#: /home/html/love/message.php:43
+msgid "Picture"
+msgstr "Picture"
+
+#: /home/html/love/libs/register.php:109
+msgid "Welcome to Onnea - Dating"
+msgstr "Maligayang pagdating sa Onnea - Dating"
+
+#: /home/html/love/libs/message.php:69
+msgid "Messages:"
+msgstr "Mga mensahe:"
+
+#: /home/html/love/libs/settings.php:39
+msgid "Women"
+msgstr "Babae"
+
+#: /home/html/love/libs/settings.php:41
+msgid "Men"
+msgstr "Mga lalaki"
+
+#: /home/html/love/libs/settings.php:43
+msgid "Both"
+msgstr "Parehong"
+
+#: /home/html/love/libs/settings.php:115 /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "years from"
+msgstr "taon mula sa"
+
+#: /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "kilometers from you"
+msgstr "kilometro mula sa iyo"
+
+#: /home/html/love/libs/db.inc.php:22
+#: /home/html/love/android/libs/db.inc.php:22
+msgid "Failed to connect to the database"
+msgstr "Nabigong kumonekta sa database"
+
+#: /home/html/love/libs/db.inc.php:26
+#: /home/html/love/android/libs/db.inc.php:26
+msgid "Could not find the database"
+msgstr "Hindi mahanap ang database"
+
+#: /home/html/love/libs/member.php:42
+msgid " km from you"
+msgstr "km mula sa iyo"
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - connect with someone."
+msgstr "Onnea - kumonekta sa isang tao."
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - dating"
+msgstr "Onnea - dating"
+
+#: /home/html/love/libs/functions.php:805
+msgid ""
+"online dating, dating, love, online sex, sex, free dating, android dating, "
+"matchmaking, mobile dating"
+msgstr ""
+"online dating, dating, pag-ibig, online sex, sex, free dating, android "
+"dating, paggawa ng mga posporo, mobile dating"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Mirabile"
+msgstr "Mirabile"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Start"
+msgstr "Start"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Start page"
+msgstr "Simula ng pahina"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Logout"
+msgstr "Logout"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Register"
+msgstr "Magrehistro"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Login"
+msgstr "Login"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Menu"
+msgstr "Menu"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Your matches"
+msgstr "Ang iyong mga tugma"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Messages"
+msgstr "Mga Mensahe"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Profile"
+msgstr "Profile"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Change password"
+msgstr "Palitan ang password"
+
+#: /home/html/love/libs/functions.php:812 /home/html/love/index.php:15
+msgid "Onnea - connect with someone"
+msgstr "Onnea - kumonekta sa isang tao"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Copyright&copy;"
+msgstr "Copyright & copy;"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Contact us"
+msgstr "Makipag-ugnayan sa amin"
+
+#: /home/html/love/libs/functions.php:812
+msgid "http://www.onnea.net/love"
+msgstr "http://www.onnea.net/love"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Terms of Service"
+msgstr "Mga palatuntunan"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Privacy Policy"
+msgstr "Patakaran sa Pagkapribado"
+
+#: /home/html/love/settings.php:85
+msgid "Your profile"
+msgstr "Ang iyong profile"
+
+#: /home/html/love/settings.php:85
+msgid "About you"
+msgstr "Tungkol sa iyo"
+
+#: /home/html/love/settings.php:85
+msgid "About you:"
+msgstr "Tungkol sa iyo:"
+
+#: /home/html/love/settings.php:85
+msgid "You search:"
+msgstr "Naghanap ka:"
+
+#: /home/html/love/settings.php:85
+msgid "Birthday:"
+msgstr "Kaarawan:"
+
+#: /home/html/love/settings.php:85
+msgid "Save"
+msgstr "I-save ang"
+
+#: /home/html/love/settings.php:86
+msgid "Distance:"
+msgstr "Layo:"
+
+#: /home/html/love/settings.php:86
+msgid "Age:"
+msgstr "Edad:"
+
+#: /home/html/love/matches.php:25
+msgid "Matching profiles appears here when both click like"
+msgstr "Profiles Pagtutugma lilitaw dito kapag pareho click tulad ng"
+
+#: /home/html/love/matches.php:26
+msgid "Send message"
+msgstr "Magpadala ng mensahe"
+
+#: /home/html/love/matches.php:26
+msgid "Remove"
+msgstr "Tanggalin"
+
+#: /home/html/love/contact.php:26
+msgid "You successfully send the message to us"
+msgstr "Matagumpay mong ipadala ang mensahe sa amin"
+
+#: /home/html/love/contact.php:32
+msgid "Please contact me"
+msgstr "Mangyaring makipag-ugnay sa akin"
+
+#: /home/html/love/contact.php:34
+msgid "I want to get the newsletter"
+msgstr "Gusto kong makakuha ng mga newsletter"
+
+#: /home/html/love/contact.php:80
+msgid "Name can not be empty"
+msgstr "Hindi maaaring walang laman Pangalan"
+
+#: /home/html/love/contact.php:107
+msgid "Onnea Contact Form at Onnea"
+msgstr "Onnea Contact Form sa Onnea"
+
+#: /home/html/love/contact.php:107
+msgid "Online Contact Form."
+msgstr "Online Form Contact."
+
+#: /home/html/love/contact.php:108
+msgid "Your name"
+msgstr "Ang pangalan mo"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:79
+msgid "Your Email"
+msgstr "Ang email mo"
+
+#: /home/html/love/contact.php:108
+msgid "Subject"
+msgstr "Paksa"
+
+#: /home/html/love/contact.php:108
+msgid "Message to us"
+msgstr "Mensahe sa amin"
+
+#: /home/html/love/contact.php:108
+msgid "Code"
+msgstr "Code"
+
+#: /home/html/love/contact.php:108
+msgid "Enter Code"
+msgstr "Ipasok ang Code"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:83
+msgid "Submit"
+msgstr "Isumite"
+
+#: /home/html/love/contact.php:109
+msgid "* denotes a required field."
+msgstr "* Nagpapahiwatig ng kinakailangang field."
+
+#: /home/html/love/contact.php:109
+msgid "Please Subscribe me to the newsletter."
+msgstr "Mangyaring Mag-subscribe ako sa mga newsletter."
+
+#: /home/html/love/contact.php:109
+msgid "Message you are sending."
+msgstr "Mensahe ikaw ay pagpapadala."
+
+#: /home/html/love/contact.php:109
+msgid "Your Contact Details."
+msgstr "Ang iyong Mga Detalye ng Contact."
+
+#: /home/html/love/login.php:59
+msgid "You must enter a valid email!"
+msgstr "Kailangan mong magpasok ng isang wastong email!"
+
+#: /home/html/love/login.php:61
+msgid ""
+"There was an error with your login please check your username and password "
+"then, try again."
+msgstr ""
+"Nagkaroon ng error sa iyong pag-login mangyaring suriin ang iyong username "
+"at password at pagkatapos, subukang muli."
+
+#: /home/html/love/login.php:71
+msgid "Blank username"
+msgstr "Blangko username"
+
+#: /home/html/love/login.php:96
+msgid "Password:"
+msgstr "Password:"
+
+#: /home/html/love/login.php:97
+msgid "Email::"
+msgstr "Email ::"
+
+#: /home/html/love/login.php:97
+msgid "Login with Facebook"
+msgstr "Mag login sa facebook"
+
+#: /home/html/love/login.php:97
+msgid "Retrieve it now"
+msgstr "Kunin ito ngayon"
+
+#: /home/html/love/login.php:98
+msgid ""
+"Login to find someone!. If you do not already have an account you can "
+"register for one. Once you have registered you can come back here and login."
+msgstr ""
+"Mag-login sa mahanap ang isang tao !. Kung hindi mo ay mayroon ng isang "
+"account maaari kang magrehistro para sa isa. Kapag kayo ay nakarehistro "
+"maaari kang bumalik dito at mag-login."
+
+#: /home/html/love/login.php:99
+msgid "Onnea - connecting people"
+msgstr "Onnea - pagkonekta sa mga tao"
+
+#: /home/html/love/login.php:99
+msgid "Enter your email and password to login."
+msgstr "Ipasok ang iyong email at password upang mag-login."
+
+#: /home/html/love/login.php:99
+msgid "Remember me next time!"
+msgstr "Tandaan ako sa susunod na pagkakataon!"
+
+#: /home/html/love/login.php:99
+msgid "Forgot your password?"
+msgstr "Nakalimutan ang iyong password?"
+
+#: /home/html/love/reset.php:28
+msgid "You have successfully updated your password."
+msgstr "Ikaw ay matagumpay na na-update ang iyong password."
+
+#: /home/html/love/reset.php:32
+msgid "New password too short or not accepted."
+msgstr "Bagong password masyadong maikli o hindi tinanggap."
+
+#: /home/html/love/reset.php:35
+msgid "Your old password does not match."
+msgstr "Ang iyong lumang password ay hindi tumutugma."
+
+#: /home/html/love/reset.php:52
+msgid ""
+"Your password has been reset, You will recieve an E-mail with your new "
+"password shortly."
+msgstr ""
+"Ang iyong password ay nai-reset, Ikaw ay matanggap ng isang E-mail sa iyong "
+"bagong password sa ilang sandali."
+
+#: /home/html/love/reset.php:56
+msgid "Hi %USERNAME%, your password is %PASSWORD% <br /><br />Please login at %URL%"
+msgstr ""
+"Hi% USERNAME%, ang iyong password ay% PASSWORD% <br /> <br /> Mangyaring "
+"mag-login sa% URL%"
+
+#: /home/html/love/reset.php:59
+msgid "Forgotten username or password from %URL%"
+msgstr "Nakalimutan mo ba ang username o password mula sa% URL%"
+
+#: /home/html/love/reset.php:64
+msgid "That email do not exist as our user"
+msgstr "Email na ay hindi umiiral bilang aming user"
+
+#: /home/html/love/reset.php:68
+msgid "You must provide a valid E-mail."
+msgstr "Dapat kang magbigay ng isang wastong e-mail."
+
+#: /home/html/love/reset.php:78
+msgid "Forgotten password"
+msgstr "Nakalimutang Password"
+
+#: /home/html/love/reset.php:79
+msgid "Reset"
+msgstr "I-reset ang"
+
+#: /home/html/love/reset.php:80
+msgid ""
+"Did you forget your password? Provide us with the E-mail address you created "
+"your account with and your details will be sent to you."
+msgstr ""
+"Nakalimutan mo ang iyong password? Ibigay sa amin ang mga E-mail address na "
+"iyong nilikha ang iyong account sa at ang iyong mga detalye ay ipapadala sa "
+"iyo."
+
+#: /home/html/love/reset.php:81
+msgid "Reset your forgotten password."
+msgstr "I-reset ang iyong nalimutan ang password."
+
+#: /home/html/love/reset.php:82
+msgid "Change your password."
+msgstr "Baguhin ang iyong password."
+
+#: /home/html/love/reset.php:82
+msgid ""
+"Update your password here. Just enter your old password, and your new "
+"password."
+msgstr ""
+"I-update ang iyong password dito. Ipasok lamang ang iyong lumang password, "
+"at ang iyong bagong password."
+
+#: /home/html/love/reset.php:83
+msgid "Change your existing password."
+msgstr "Baguhin ang iyong mga umiiral na password."
+
+#: /home/html/love/reset.php:83
+msgid "Old Password"
+msgstr "Lumang password"
+
+#: /home/html/love/reset.php:83
+msgid "New Password"
+msgstr "Bagong Password"
+
+#: /home/html/love/index.php:15
+msgid "A very simple way finding someone!"
+msgstr "Isang napaka-simpleng paraan sa paghahanap ng isang tao!"
+
+#: /home/html/love/index.php:16
+msgid ""
+"You just click yes or no, if you get a yes back then you can decide to meet "
+"for a nice dinner."
+msgstr ""
+"I-click mo lamang ang oo o hindi, kung ikaw ay makakuha ng isang yes bumalik "
+"pagkatapos ay maaari kang magpasya upang matugunan para sa isang masarap na "
+"hapunan."
+
+#: /home/html/love/index.php:17
+msgid "Search within 0-2000 kilometers from you. Dating & matchmaking made easy."
+msgstr ""
+"Maghanap sa loob ng 0-2000 kilometro mula sa iyo. Dating & paggawa ng mga "
+"posporo ginawa madaling."
+
+#: /home/html/love/index.php:18
+msgid "Click here to download this on Google Play"
+msgstr "Mag-click dito upang i-download ito sa Google Play"
+
+#: /home/html/love/index.php:19
+msgid "You get only one chance with everyone, so click carefully."
+msgstr ""
+"Makakakuha ka ng isa lamang na pagkakataon sa lahat ng tao, kaya i-click ang "
+"mabuti."
+

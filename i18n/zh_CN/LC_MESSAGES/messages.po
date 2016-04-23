@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "Like"
+msgstr "喜欢"
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "No"
+msgstr "否"
+
+#: /home/html/love/member2.php:21 /home/html/love/member.php:21
+msgid "No new profiles near you, look back later"
+msgstr "你附近没有新的配置文件，后来回望"
+
+#: /home/html/love/register.php:43 /home/html/love/register.php:45
+msgid "Registered successfully"
+msgstr "成功注册"
+
+#: /home/html/love/register.php:59
+msgid "Give a valid name without space or special characters."
+msgstr "给无空格或特殊字符的有效名称。"
+
+#: /home/html/love/register.php:63
+msgid "Give a valid email."
+msgstr "举一个有效的电子邮件。"
+
+#: /home/html/love/register.php:67
+msgid "That email is already in use."
+msgstr "该电子邮件已被使用。"
+
+#: /home/html/love/register.php:71
+msgid "Invalid gender"
+msgstr "性别无效"
+
+#: /home/html/love/register.php:75
+msgid "Invalid password"
+msgstr "无效的密码"
+
+#: /home/html/love/register.php:79
+msgid "Invalid birthday"
+msgstr "无效的生日"
+
+#: /home/html/love/register.php:103
+msgid "Register a new user"
+msgstr "新用户注册"
+
+#: /home/html/love/register.php:104
+msgid ""
+"Before you can join, you must give your name, age and email. Your email can "
+"not be seen. Your name and age is visible. The password is sent to your "
+"email"
+msgstr "之前，你可以加入，你必须给你的姓名，年龄和电子邮件。您的电子邮件不能被看到。您的姓名和年龄是可见的。将密码发送到您的邮箱"
+
+#: /home/html/love/register.php:104
+msgid "Join now and find someone."
+msgstr "现在就加入找人。"
+
+#: /home/html/love/register.php:105
+msgid ""
+"Register with <a href=\"http://www.facebook.com\">Facebook</a> or <a "
+"href=\"http://www.vk.com\">VK.com</a>."
+msgstr ""
+"与<a href=\"http://www.facebook.com\"> Facebook的</a>或<a "
+"href=\"http://www.vk.com\"> VK.com </A>注册。"
+
+#: /home/html/love/message.php:43
+msgid "Matches"
+msgstr "联系方式"
+
+#: /home/html/love/message.php:43
+msgid "Picture"
+msgstr "图画"
+
+#: /home/html/love/libs/register.php:109
+msgid "Welcome to Onnea - Dating"
+msgstr "欢迎Onnea  - 约会"
+
+#: /home/html/love/libs/message.php:69
+msgid "Messages:"
+msgstr "消息："
+
+#: /home/html/love/libs/settings.php:39
+msgid "Women"
+msgstr "女人"
+
+#: /home/html/love/libs/settings.php:41
+msgid "Men"
+msgstr "男人"
+
+#: /home/html/love/libs/settings.php:43
+msgid "Both"
+msgstr "这两个"
+
+#: /home/html/love/libs/settings.php:115 /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "years from"
+msgstr "年内"
+
+#: /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "kilometers from you"
+msgstr "从你公里"
+
+#: /home/html/love/libs/db.inc.php:22
+#: /home/html/love/android/libs/db.inc.php:22
+msgid "Failed to connect to the database"
+msgstr "无法连接到数据库"
+
+#: /home/html/love/libs/db.inc.php:26
+#: /home/html/love/android/libs/db.inc.php:26
+msgid "Could not find the database"
+msgstr "找不到数据库"
+
+#: /home/html/love/libs/member.php:42
+msgid " km from you"
+msgstr "从你公里"
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - connect with someone."
+msgstr "Onnea  - 跟一个人。"
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - dating"
+msgstr "Onnea  - 约会"
+
+#: /home/html/love/libs/functions.php:805
+msgid ""
+"online dating, dating, love, online sex, sex, free dating, android dating, "
+"matchmaking, mobile dating"
+msgstr "网上交友，约会，恋爱，网上性，性别，免费交友，约会的Andr​​oid，牵线搭桥，手机交友"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Mirabile"
+msgstr "Mirabile"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Start"
+msgstr "开端"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Start page"
+msgstr "首页"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Logout"
+msgstr "登出"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Register"
+msgstr "注册"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Login"
+msgstr "登录"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Menu"
+msgstr "菜单"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Your matches"
+msgstr "你的比赛"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Messages"
+msgstr "消息"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Profile"
+msgstr "简介"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Change password"
+msgstr "更改密码"
+
+#: /home/html/love/libs/functions.php:812 /home/html/love/index.php:15
+msgid "Onnea - connect with someone"
+msgstr "Onnea  - 跟有人"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Copyright&copy;"
+msgstr "版权及复印件;"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Contact us"
+msgstr "联系我们"
+
+#: /home/html/love/libs/functions.php:812
+msgid "http://www.onnea.net/love"
+msgstr "http://www.onnea.net/love"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Terms of Service"
+msgstr "服务条款"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+#: /home/html/love/settings.php:85
+msgid "Your profile"
+msgstr "你的个人资料"
+
+#: /home/html/love/settings.php:85
+msgid "About you"
+msgstr "关于你"
+
+#: /home/html/love/settings.php:85
+msgid "About you:"
+msgstr "关于你："
+
+#: /home/html/love/settings.php:85
+msgid "You search:"
+msgstr "您搜索："
+
+#: /home/html/love/settings.php:85
+msgid "Birthday:"
+msgstr "生日："
+
+#: /home/html/love/settings.php:85
+msgid "Save"
+msgstr "保存"
+
+#: /home/html/love/settings.php:86
+msgid "Distance:"
+msgstr "距离："
+
+#: /home/html/love/settings.php:86
+msgid "Age:"
+msgstr "年龄："
+
+#: /home/html/love/matches.php:25
+msgid "Matching profiles appears here when both click like"
+msgstr "匹配配置文件出现在这里当两个点击喜欢"
+
+#: /home/html/love/matches.php:26
+msgid "Send message"
+msgstr "发信息"
+
+#: /home/html/love/matches.php:26
+msgid "Remove"
+msgstr "删除"
+
+#: /home/html/love/contact.php:26
+msgid "You successfully send the message to us"
+msgstr "您已成功发送邮件给我们"
+
+#: /home/html/love/contact.php:32
+msgid "Please contact me"
+msgstr "请与我联系"
+
+#: /home/html/love/contact.php:34
+msgid "I want to get the newsletter"
+msgstr "我希望得到电子报"
+
+#: /home/html/love/contact.php:80
+msgid "Name can not be empty"
+msgstr "名称不能为空"
+
+#: /home/html/love/contact.php:107
+msgid "Onnea Contact Form at Onnea"
+msgstr "在Onnea Onnea联系表"
+
+#: /home/html/love/contact.php:107
+msgid "Online Contact Form."
+msgstr "在线联系表。"
+
+#: /home/html/love/contact.php:108
+msgid "Your name"
+msgstr "你的名字"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:79
+msgid "Your Email"
+msgstr "你的邮件"
+
+#: /home/html/love/contact.php:108
+msgid "Subject"
+msgstr "学科"
+
+#: /home/html/love/contact.php:108
+msgid "Message to us"
+msgstr "留言给我们"
+
+#: /home/html/love/contact.php:108
+msgid "Code"
+msgstr "代码"
+
+#: /home/html/love/contact.php:108
+msgid "Enter Code"
+msgstr "输入代码"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:83
+msgid "Submit"
+msgstr "服从"
+
+#: /home/html/love/contact.php:109
+msgid "* denotes a required field."
+msgstr "*为必填字段。"
+
+#: /home/html/love/contact.php:109
+msgid "Please Subscribe me to the newsletter."
+msgstr "请订阅我的通讯。"
+
+#: /home/html/love/contact.php:109
+msgid "Message you are sending."
+msgstr "消息要发送。"
+
+#: /home/html/love/contact.php:109
+msgid "Your Contact Details."
+msgstr "您的联系方式。"
+
+#: /home/html/love/login.php:59
+msgid "You must enter a valid email!"
+msgstr "您必须输入一个有效的电子邮件！"
+
+#: /home/html/love/login.php:61
+msgid ""
+"There was an error with your login please check your username and password "
+"then, try again."
+msgstr "有与您的登录，请检查您的用户名和密码错误然后再试试。"
+
+#: /home/html/love/login.php:71
+msgid "Blank username"
+msgstr "空白的用户名"
+
+#: /home/html/love/login.php:96
+msgid "Password:"
+msgstr "密码："
+
+#: /home/html/love/login.php:97
+msgid "Email::"
+msgstr "电子邮件::"
+
+#: /home/html/love/login.php:97
+msgid "Login with Facebook"
+msgstr "用脸书登录"
+
+#: /home/html/love/login.php:97
+msgid "Retrieve it now"
+msgstr "现在检索"
+
+#: /home/html/love/login.php:98
+msgid ""
+"Login to find someone!. If you do not already have an account you can "
+"register for one. Once you have registered you can come back here and login."
+msgstr "登录找人！如果你不已经有一个帐户，您可以注册一个。一旦你注册，你可以回到这里和登录。"
+
+#: /home/html/love/login.php:99
+msgid "Onnea - connecting people"
+msgstr "Onnea  - 连接人"
+
+#: /home/html/love/login.php:99
+msgid "Enter your email and password to login."
+msgstr "输入您的电子邮件地址和密码登录。"
+
+#: /home/html/love/login.php:99
+msgid "Remember me next time!"
+msgstr "下次记住我！"
+
+#: /home/html/love/login.php:99
+msgid "Forgot your password?"
+msgstr "忘记密码了吗？"
+
+#: /home/html/love/reset.php:28
+msgid "You have successfully updated your password."
+msgstr "您已成功更新您的密码。"
+
+#: /home/html/love/reset.php:32
+msgid "New password too short or not accepted."
+msgstr "新密码太短或不被接受。"
+
+#: /home/html/love/reset.php:35
+msgid "Your old password does not match."
+msgstr "您的旧密码不匹配。"
+
+#: /home/html/love/reset.php:52
+msgid ""
+"Your password has been reset, You will recieve an E-mail with your new "
+"password shortly."
+msgstr "您的密码已重置，您会收到一封电子邮件与您的新密码很快。"
+
+#: /home/html/love/reset.php:56
+msgid "Hi %USERNAME%, your password is %PASSWORD% <br /><br />Please login at %URL%"
+msgstr "嗨％USERNAME％，您的密码是％PASSWORD％<br /> <br />请登录以％URL％"
+
+#: /home/html/love/reset.php:59
+msgid "Forgotten username or password from %URL%"
+msgstr "从％URL％忘记了用户名或密码"
+
+#: /home/html/love/reset.php:64
+msgid "That email do not exist as our user"
+msgstr "该电子邮件不存在我们的用户"
+
+#: /home/html/love/reset.php:68
+msgid "You must provide a valid E-mail."
+msgstr "你必须提供一个有效的电子邮件。"
+
+#: /home/html/love/reset.php:78
+msgid "Forgotten password"
+msgstr "忘记密码"
+
+#: /home/html/love/reset.php:79
+msgid "Reset"
+msgstr "重置"
+
+#: /home/html/love/reset.php:80
+msgid ""
+"Did you forget your password? Provide us with the E-mail address you created "
+"your account with and your details will be sent to you."
+msgstr "你忘了你的密码？我们提供的E-mail地址您创建您的帐户，您的详细信息将被发送给您。"
+
+#: /home/html/love/reset.php:81
+msgid "Reset your forgotten password."
+msgstr "重置遗忘的密码。"
+
+#: /home/html/love/reset.php:82
+msgid "Change your password."
+msgstr "更改您的密码。"
+
+#: /home/html/love/reset.php:82
+msgid ""
+"Update your password here. Just enter your old password, and your new "
+"password."
+msgstr "在此更新您的密码。只要输入您的旧密码和新密码。"
+
+#: /home/html/love/reset.php:83
+msgid "Change your existing password."
+msgstr "改变现有的密码。"
+
+#: /home/html/love/reset.php:83
+msgid "Old Password"
+msgstr "旧密码"
+
+#: /home/html/love/reset.php:83
+msgid "New Password"
+msgstr "新密码"
+
+#: /home/html/love/index.php:15
+msgid "A very simple way finding someone!"
+msgstr "一个非常简单的方法找人！"
+
+#: /home/html/love/index.php:16
+msgid ""
+"You just click yes or no, if you get a yes back then you can decide to meet "
+"for a nice dinner."
+msgstr "您只需点击Yes或No，如果你得到一个肯定回来，那么你可以决定，以满足一个不错的晚餐。"
+
+#: /home/html/love/index.php:17
+msgid "Search within 0-2000 kilometers from you. Dating & matchmaking made easy."
+msgstr "从您0-2000公里范围内搜寻。约会和牵线搭桥变得容易。"
+
+#: /home/html/love/index.php:18
+msgid "Click here to download this on Google Play"
+msgstr "点击这里下载该对谷歌播放"
+
+#: /home/html/love/index.php:19
+msgid "You get only one chance with everyone, so click carefully."
+msgstr "你只有一次机会和大家一起，所以点击谨慎。"
+

@@ -1,0 +1,488 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "Like"
+msgstr "اعجاب"
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "No"
+msgstr "لا"
+
+#: /home/html/love/member2.php:21 /home/html/love/member.php:21
+msgid "No new profiles near you, look back later"
+msgstr "أية أوضاع جديدة بالقرب منك، ننظر إلى الوراء في وقت لاحق"
+
+#: /home/html/love/register.php:43 /home/html/love/register.php:45
+msgid "Registered successfully"
+msgstr "تم التسجيل بنجاح"
+
+#: /home/html/love/register.php:59
+msgid "Give a valid name without space or special characters."
+msgstr "تعطي اسما صالحا دون الفضاء أو أحرف خاصة."
+
+#: /home/html/love/register.php:63
+msgid "Give a valid email."
+msgstr "إعطاء بريد إلكتروني صحيح."
+
+#: /home/html/love/register.php:67
+msgid "That email is already in use."
+msgstr "أن البريد الإلكتروني هو قيد الاستخدام."
+
+#: /home/html/love/register.php:71
+msgid "Invalid gender"
+msgstr "الجنس غير صالح"
+
+#: /home/html/love/register.php:75
+msgid "Invalid password"
+msgstr "كلمة السر غير صالحة"
+
+#: /home/html/love/register.php:79
+msgid "Invalid birthday"
+msgstr "تاريخ ميلاد غير صالح"
+
+#: /home/html/love/register.php:103
+msgid "Register a new user"
+msgstr "تسجيل مستخدم جديد"
+
+#: /home/html/love/register.php:104
+msgid ""
+"Before you can join, you must give your name, age and email. Your email can "
+"not be seen. Your name and age is visible. The password is sent to your "
+"email"
+msgstr ""
+"قبل أن تتمكن من الانضمام، يجب أن تعطي اسمك وعمرك والبريد الإلكتروني. لا يمكن "
+"أن ينظر إلى البريد الإلكتروني الخاص بك. اسمك وسن مرئيا. يتم إرسال كلمة "
+"المرور إلى بريدك الإلكتروني"
+
+#: /home/html/love/register.php:104
+msgid "Join now and find someone."
+msgstr "اشترك الآن والعثور على شخص."
+
+#: /home/html/love/register.php:105
+msgid ""
+"Register with <a href=\"http://www.facebook.com\">Facebook</a> or <a "
+"href=\"http://www.vk.com\">VK.com</a>."
+msgstr ""
+"سجل باستخدام <a href=\"http://www.facebook.com\"> الفيسبوك </A> أو <a "
+"href=\"http://www.vk.com\"> VK.com </A>."
+
+#: /home/html/love/message.php:43
+msgid "Matches"
+msgstr "جهات الاتصال"
+
+#: /home/html/love/message.php:43
+msgid "Picture"
+msgstr "صورة"
+
+#: /home/html/love/libs/register.php:109
+msgid "Welcome to Onnea - Dating"
+msgstr "مرحبا بكم في Onnea - يؤرخ"
+
+#: /home/html/love/libs/message.php:69
+msgid "Messages:"
+msgstr "الرسائل:"
+
+#: /home/html/love/libs/settings.php:39
+msgid "Women"
+msgstr "نساء"
+
+#: /home/html/love/libs/settings.php:41
+msgid "Men"
+msgstr "الرجال"
+
+#: /home/html/love/libs/settings.php:43
+msgid "Both"
+msgstr "على حد سواء"
+
+#: /home/html/love/libs/settings.php:115 /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "years from"
+msgstr "سنوات من"
+
+#: /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "kilometers from you"
+msgstr "كم منكم"
+
+#: /home/html/love/libs/db.inc.php:22
+#: /home/html/love/android/libs/db.inc.php:22
+msgid "Failed to connect to the database"
+msgstr "فشل في الاتصال بقاعدة البيانات"
+
+#: /home/html/love/libs/db.inc.php:26
+#: /home/html/love/android/libs/db.inc.php:26
+msgid "Could not find the database"
+msgstr "لا يمكن العثور على قاعدة البيانات"
+
+#: /home/html/love/libs/member.php:42
+msgid " km from you"
+msgstr "كم منكم"
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - connect with someone."
+msgstr "Onnea - التواصل مع شخص ما."
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - dating"
+msgstr "Onnea - التي يرجع تاريخها"
+
+#: /home/html/love/libs/functions.php:805
+msgid ""
+"online dating, dating, love, online sex, sex, free dating, android dating, "
+"matchmaking, mobile dating"
+msgstr ""
+"التعارف عن طريق الانترنت، التي يرجع تاريخها، والحب، والجنس عبر الإنترنت أو "
+"الجنس أو الحرة التي يرجع تاريخها، الروبوت التي يرجع تاريخها، والمواءمة، التي "
+"يرجع تاريخها المحمول"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Mirabile"
+msgstr "Mirabile"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Start"
+msgstr "بداية"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Start page"
+msgstr "أبدأ الصفحة"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Logout"
+msgstr "تسجيل خروج"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Register"
+msgstr "تسجيل"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Menu"
+msgstr "قائمة طعام"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Your matches"
+msgstr "مباريات الخاص بك"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Messages"
+msgstr "رسائل"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Change password"
+msgstr "تغيير كلمة المرور"
+
+#: /home/html/love/libs/functions.php:812 /home/html/love/index.php:15
+msgid "Onnea - connect with someone"
+msgstr "Onnea - التواصل مع شخص ما"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Copyright&copy;"
+msgstr "حقوق الطبع والنشر والنسخ."
+
+#: /home/html/love/libs/functions.php:812
+msgid "Contact us"
+msgstr "اتصل بنا"
+
+#: /home/html/love/libs/functions.php:812
+msgid "http://www.onnea.net/love"
+msgstr "http://www.onnea.net/love"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Terms of Service"
+msgstr "شروط الخدمة"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+#: /home/html/love/settings.php:85
+msgid "Your profile"
+msgstr "ملفك الشخصي"
+
+#: /home/html/love/settings.php:85
+msgid "About you"
+msgstr "عنك"
+
+#: /home/html/love/settings.php:85
+msgid "About you:"
+msgstr "عنك:"
+
+#: /home/html/love/settings.php:85
+msgid "You search:"
+msgstr "انت تبحث:"
+
+#: /home/html/love/settings.php:85
+msgid "Birthday:"
+msgstr "تاريخ الميلاد:"
+
+#: /home/html/love/settings.php:85
+msgid "Save"
+msgstr "حفظ"
+
+#: /home/html/love/settings.php:86
+msgid "Distance:"
+msgstr "بعد:"
+
+#: /home/html/love/settings.php:86
+msgid "Age:"
+msgstr "سن:"
+
+#: /home/html/love/matches.php:25
+msgid "Matching profiles appears here when both click like"
+msgstr "مطابقة لمحات يظهر هنا عند كل انقر مثل"
+
+#: /home/html/love/matches.php:26
+msgid "Send message"
+msgstr "أرسل رسالة"
+
+#: /home/html/love/matches.php:26
+msgid "Remove"
+msgstr "إزالة"
+
+#: /home/html/love/contact.php:26
+msgid "You successfully send the message to us"
+msgstr "بنجاح إرسال رسالة لنا"
+
+#: /home/html/love/contact.php:32
+msgid "Please contact me"
+msgstr "الرجاء الاتصال بي"
+
+#: /home/html/love/contact.php:34
+msgid "I want to get the newsletter"
+msgstr "أريد الحصول على النشرة الإخبارية"
+
+#: /home/html/love/contact.php:80
+msgid "Name can not be empty"
+msgstr "اسم لا يمكن أن يكون فارغا"
+
+#: /home/html/love/contact.php:107
+msgid "Onnea Contact Form at Onnea"
+msgstr "Onnea نموذج الاتصال في Onnea"
+
+#: /home/html/love/contact.php:107
+msgid "Online Contact Form."
+msgstr "نموذج الإتصال عبر الإنترنت."
+
+#: /home/html/love/contact.php:108
+msgid "Your name"
+msgstr "اسمك"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:79
+msgid "Your Email"
+msgstr "بريدك الإلكتروني"
+
+#: /home/html/love/contact.php:108
+msgid "Subject"
+msgstr "موضوع"
+
+#: /home/html/love/contact.php:108
+msgid "Message to us"
+msgstr "رسالة لنا"
+
+#: /home/html/love/contact.php:108
+msgid "Code"
+msgstr "رمز"
+
+#: /home/html/love/contact.php:108
+msgid "Enter Code"
+msgstr "الكود"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:83
+msgid "Submit"
+msgstr "عرض"
+
+#: /home/html/love/contact.php:109
+msgid "* denotes a required field."
+msgstr "* يدل على حقل مطلوب."
+
+#: /home/html/love/contact.php:109
+msgid "Please Subscribe me to the newsletter."
+msgstr "يرجى الاشتراك لي في النشرة."
+
+#: /home/html/love/contact.php:109
+msgid "Message you are sending."
+msgstr "رسالة تقوم بإرسالها."
+
+#: /home/html/love/contact.php:109
+msgid "Your Contact Details."
+msgstr "تفاصيل الاتصال الخاصة بك."
+
+#: /home/html/love/login.php:59
+msgid "You must enter a valid email!"
+msgstr "يجب إدخال البريد الإلكتروني الصحيح!"
+
+#: /home/html/love/login.php:61
+msgid ""
+"There was an error with your login please check your username and password "
+"then, try again."
+msgstr ""
+"كان هناك خطأ في تسجيل الدخول يرجى التحقق من اسم المستخدم وكلمة المرور الخاصة "
+"بك ثم حاول مرة أخرى."
+
+#: /home/html/love/login.php:71
+msgid "Blank username"
+msgstr "اسم المستخدم فارغة"
+
+#: /home/html/love/login.php:96
+msgid "Password:"
+msgstr "كلمة السر:"
+
+#: /home/html/love/login.php:97
+msgid "Email::"
+msgstr "البريد الإلكتروني::"
+
+#: /home/html/love/login.php:97
+msgid "Login with Facebook"
+msgstr "تسجيل الدخول مع الفيسبوك"
+
+#: /home/html/love/login.php:97
+msgid "Retrieve it now"
+msgstr "استرداد عليه الآن"
+
+#: /home/html/love/login.php:98
+msgid ""
+"Login to find someone!. If you do not already have an account you can "
+"register for one. Once you have registered you can come back here and login."
+msgstr ""
+"الدخول للعثور على شخص! إذا لم يكن لديك بالفعل حساب يمكنك تسجيل لأحد. بمجرد "
+"تسجيلك يمكنك أن تأتي إلى هنا وتسجيل الدخول."
+
+#: /home/html/love/login.php:99
+msgid "Onnea - connecting people"
+msgstr "Onnea - ربط الناس"
+
+#: /home/html/love/login.php:99
+msgid "Enter your email and password to login."
+msgstr "ادخل بريدك الإلكتروني وكلمة المرور للدخول."
+
+#: /home/html/love/login.php:99
+msgid "Remember me next time!"
+msgstr "تذكرني في المرة القادمة!"
+
+#: /home/html/love/login.php:99
+msgid "Forgot your password?"
+msgstr "نسيت كلمة السر؟"
+
+#: /home/html/love/reset.php:28
+msgid "You have successfully updated your password."
+msgstr "لقد نجحت في تحديث كلمة السر الخاصة بك."
+
+#: /home/html/love/reset.php:32
+msgid "New password too short or not accepted."
+msgstr "كلمة سر جديدة قصيرة جدا أو غير مقبولة."
+
+#: /home/html/love/reset.php:35
+msgid "Your old password does not match."
+msgstr "لا تطابق كلمة المرور القديمة."
+
+#: /home/html/love/reset.php:52
+msgid ""
+"Your password has been reset, You will recieve an E-mail with your new "
+"password shortly."
+msgstr ""
+"وقد تم إعادة تعيين كلمة المرور الخاصة بك، أنت ستستلم رسالة بالبريد "
+"الإلكتروني مع كلمة المرور الجديدة بعد قليل."
+
+#: /home/html/love/reset.php:56
+msgid "Hi %USERNAME%, your password is %PASSWORD% <br /><br />Please login at %URL%"
+msgstr ""
+"مرحبا٪ USERNAME٪، كلمة المرور هي٪ PASSWORD٪ <br /> <br /> والرجاء الدخول في "
+"URL٪٪"
+
+#: /home/html/love/reset.php:59
+msgid "Forgotten username or password from %URL%"
+msgstr "اسم المستخدم أو كلمة المرور المنسية من URL٪٪"
+
+#: /home/html/love/reset.php:64
+msgid "That email do not exist as our user"
+msgstr "أن البريد الإلكتروني لا وجود لها كمستخدم لدينا"
+
+#: /home/html/love/reset.php:68
+msgid "You must provide a valid E-mail."
+msgstr "يجب توفير الإلكتروني E-صالح."
+
+#: /home/html/love/reset.php:78
+msgid "Forgotten password"
+msgstr "كلمة سر منسية"
+
+#: /home/html/love/reset.php:79
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#: /home/html/love/reset.php:80
+msgid ""
+"Did you forget your password? Provide us with the E-mail address you created "
+"your account with and your details will be sent to you."
+msgstr ""
+"هل نسيت كلمة السر؟ تقدم لنا مع عنوان البريد الإلكتروني الذي قمت بإنشائه "
+"حسابك مع وسيتم إرسال التفاصيل الخاصة بك لك."
+
+#: /home/html/love/reset.php:81
+msgid "Reset your forgotten password."
+msgstr "إعادة تعيين كلمة المرور المنسية."
+
+#: /home/html/love/reset.php:82
+msgid "Change your password."
+msgstr "تغيير كلمة المرور الخاصة بك."
+
+#: /home/html/love/reset.php:82
+msgid ""
+"Update your password here. Just enter your old password, and your new "
+"password."
+msgstr ""
+"تحديث كلمة السر الخاصة بك هنا. فقط أدخل كلمة المرور القديمة وكلمة المرور "
+"الجديدة."
+
+#: /home/html/love/reset.php:83
+msgid "Change your existing password."
+msgstr "تغيير كلمة السر الموجودة لديك."
+
+#: /home/html/love/reset.php:83
+msgid "Old Password"
+msgstr "كلمة المرور القديمة"
+
+#: /home/html/love/reset.php:83
+msgid "New Password"
+msgstr "كلمة المرور الجديدة"
+
+#: /home/html/love/index.php:15
+msgid "A very simple way finding someone!"
+msgstr "وهناك طريقة بسيطة جدا العثور على شخص!"
+
+#: /home/html/love/index.php:16
+msgid ""
+"You just click yes or no, if you get a yes back then you can decide to meet "
+"for a nice dinner."
+msgstr ""
+"كنت فقط اضغط نعم أو لا، إذا كنت تحصل على الإجابة بنعم، ثم يعود يمكنك أن تقرر "
+"أن تجتمع لتناول العشاء لطيفة."
+
+#: /home/html/love/index.php:17
+msgid "Search within 0-2000 kilometers from you. Dating & matchmaking made easy."
+msgstr "بحث في 0-2000 كيلومتر منك. جعل التعارف والتوفيق بين سهلا."
+
+#: /home/html/love/index.php:18
+msgid "Click here to download this on Google Play"
+msgstr "انقر هنا لتحميل هذا على Google Play"
+
+#: /home/html/love/index.php:19
+msgid "You get only one chance with everyone, so click carefully."
+msgstr "يمكنك الحصول على فرصة واحدة فقط مع الجميع، وفوق ذلك بعناية."
+

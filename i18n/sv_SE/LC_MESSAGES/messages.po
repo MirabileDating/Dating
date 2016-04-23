@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "Like"
+msgstr "Gillar"
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "No"
+msgstr "Nej"
+
+#: /home/html/love/member2.php:21 /home/html/love/member.php:21
+msgid "No new profiles near you, look back later"
+msgstr "Inga nya profiler nära dig, ser tillbaka senare"
+
+#: /home/html/love/register.php:43 /home/html/love/register.php:45
+msgid "Registered successfully"
+msgstr "Registrerad framgångsrikt"
+
+#: /home/html/love/register.php:59
+msgid "Give a valid name without space or special characters."
+msgstr "Ge ett giltigt namn utan mellanslag eller specialtecken."
+
+#: /home/html/love/register.php:63
+msgid "Give a valid email."
+msgstr "Ge en giltig e-postadress."
+
+#: /home/html/love/register.php:67
+msgid "That email is already in use."
+msgstr "Att e-post är redan i bruk."
+
+#: /home/html/love/register.php:71
+msgid "Invalid gender"
+msgstr "Ogiltigt kön"
+
+#: /home/html/love/register.php:75
+msgid "Invalid password"
+msgstr "Felaktigt lösenord"
+
+#: /home/html/love/register.php:79
+msgid "Invalid birthday"
+msgstr "Ogiltigt födelsedag"
+
+#: /home/html/love/register.php:103
+msgid "Register a new user"
+msgstr "Registrera en ny användare"
+
+#: /home/html/love/register.php:104
+msgid ""
+"Before you can join, you must give your name, age and email. Your email can "
+"not be seen. Your name and age is visible. The password is sent to your "
+"email"
+msgstr ""
+"Innan du kan gå med, måste du ge ditt namn, ålder och e-post. Din e-post kan "
+"inte ses. Ditt namn och ålder är synlig. Lösenordet skickas till din e-post"
+
+#: /home/html/love/register.php:104
+msgid "Join now and find someone."
+msgstr "Gå med nu och hitta någon."
+
+#: /home/html/love/register.php:105
+msgid ""
+"Register with <a href=\"http://www.facebook.com\">Facebook</a> or <a "
+"href=\"http://www.vk.com\">VK.com</a>."
+msgstr ""
+"Registrera dig med <a href=\"http://www.facebook.com\"> Facebook </a> eller "
+"<a href=\"http://www.vk.com\"> VK.com </a>."
+
+#: /home/html/love/message.php:43
+msgid "Matches"
+msgstr "Kontakter"
+
+#: /home/html/love/message.php:43
+msgid "Picture"
+msgstr "Bild"
+
+#: /home/html/love/libs/register.php:109
+msgid "Welcome to Onnea - Dating"
+msgstr "Välkommen till Onnea - Dating"
+
+#: /home/html/love/libs/message.php:69
+msgid "Messages:"
+msgstr "Meddelanden:"
+
+#: /home/html/love/libs/settings.php:39
+msgid "Women"
+msgstr "Kvinnor"
+
+#: /home/html/love/libs/settings.php:41
+msgid "Men"
+msgstr "Män"
+
+#: /home/html/love/libs/settings.php:43
+msgid "Both"
+msgstr "Båda"
+
+#: /home/html/love/libs/settings.php:115 /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "years from"
+msgstr "år från"
+
+#: /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "kilometers from you"
+msgstr "kilometer från dig"
+
+#: /home/html/love/libs/db.inc.php:22
+#: /home/html/love/android/libs/db.inc.php:22
+msgid "Failed to connect to the database"
+msgstr "Det gick inte att ansluta till databasen"
+
+#: /home/html/love/libs/db.inc.php:26
+#: /home/html/love/android/libs/db.inc.php:26
+msgid "Could not find the database"
+msgstr "Det gick inte att hitta databasen"
+
+#: /home/html/love/libs/member.php:42
+msgid " km from you"
+msgstr "km från dig"
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - connect with someone."
+msgstr "Onnea - ta kontakt med någon."
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - dating"
+msgstr "Onnea - dejting"
+
+#: /home/html/love/libs/functions.php:805
+msgid ""
+"online dating, dating, love, online sex, sex, free dating, android dating, "
+"matchmaking, mobile dating"
+msgstr ""
+"online dating, dejting, kärlek, online-sex, sex, gratis dating, android "
+"dating, matchmaking, mobil dejting"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Mirabile"
+msgstr "Mirabile"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Start"
+msgstr "Start"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Start page"
+msgstr "Startsida"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Logout"
+msgstr "Logga ut"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Register"
+msgstr "Register"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Login"
+msgstr "Logga in"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Menu"
+msgstr "Meny"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Your matches"
+msgstr "Dina träffar"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Messages"
+msgstr "Meddelanden"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Profile"
+msgstr "Profil"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Change password"
+msgstr "Byt lösenord"
+
+#: /home/html/love/libs/functions.php:812 /home/html/love/index.php:15
+msgid "Onnea - connect with someone"
+msgstr "Onnea - ta kontakt med någon"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Copyright&copy;"
+msgstr "Copyright & copy;"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Contact us"
+msgstr "Kontakta oss"
+
+#: /home/html/love/libs/functions.php:812
+msgid "http://www.onnea.net/love"
+msgstr "http://www.onnea.net/love"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Terms of Service"
+msgstr "Användarvillkor"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Privacy Policy"
+msgstr "Integritetspolicy"
+
+#: /home/html/love/settings.php:85
+msgid "Your profile"
+msgstr "Din profil"
+
+#: /home/html/love/settings.php:85
+msgid "About you"
+msgstr "Om dig"
+
+#: /home/html/love/settings.php:85
+msgid "About you:"
+msgstr "Om dig:"
+
+#: /home/html/love/settings.php:85
+msgid "You search:"
+msgstr "Du söker:"
+
+#: /home/html/love/settings.php:85
+msgid "Birthday:"
+msgstr "Födelsedag:"
+
+#: /home/html/love/settings.php:85
+msgid "Save"
+msgstr "Spara"
+
+#: /home/html/love/settings.php:86
+msgid "Distance:"
+msgstr "Avstånd:"
+
+#: /home/html/love/settings.php:86
+msgid "Age:"
+msgstr "Ålder:"
+
+#: /home/html/love/matches.php:25
+msgid "Matching profiles appears here when both click like"
+msgstr "Matchande profiler visas här när båda klicka gillar"
+
+#: /home/html/love/matches.php:26
+msgid "Send message"
+msgstr "Skicka meddelande"
+
+#: /home/html/love/matches.php:26
+msgid "Remove"
+msgstr "Avlägsna"
+
+#: /home/html/love/contact.php:26
+msgid "You successfully send the message to us"
+msgstr "Du skickar framgångsrikt budskap till oss"
+
+#: /home/html/love/contact.php:32
+msgid "Please contact me"
+msgstr "Snälla kontakta mig"
+
+#: /home/html/love/contact.php:34
+msgid "I want to get the newsletter"
+msgstr "Jag vill få nyhetsbrevet"
+
+#: /home/html/love/contact.php:80
+msgid "Name can not be empty"
+msgstr "Namn kan inte vara tomt"
+
+#: /home/html/love/contact.php:107
+msgid "Onnea Contact Form at Onnea"
+msgstr "Onnea kontaktformuläret på Onnea"
+
+#: /home/html/love/contact.php:107
+msgid "Online Contact Form."
+msgstr "Kontaktformulär."
+
+#: /home/html/love/contact.php:108
+msgid "Your name"
+msgstr "Ditt namn"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:79
+msgid "Your Email"
+msgstr "Din e-post"
+
+#: /home/html/love/contact.php:108
+msgid "Subject"
+msgstr "Ämne"
+
+#: /home/html/love/contact.php:108
+msgid "Message to us"
+msgstr "Meddelande till oss"
+
+#: /home/html/love/contact.php:108
+msgid "Code"
+msgstr "Kod"
+
+#: /home/html/love/contact.php:108
+msgid "Enter Code"
+msgstr "Ange kod"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:83
+msgid "Submit"
+msgstr "Skicka in"
+
+#: /home/html/love/contact.php:109
+msgid "* denotes a required field."
+msgstr "* Anger ett obligatoriskt fält."
+
+#: /home/html/love/contact.php:109
+msgid "Please Subscribe me to the newsletter."
+msgstr "Vänligen Prenumerera mig till nyhetsbrevet."
+
+#: /home/html/love/contact.php:109
+msgid "Message you are sending."
+msgstr "Meddelande du skickar."
+
+#: /home/html/love/contact.php:109
+msgid "Your Contact Details."
+msgstr "Dina kontaktuppgifter."
+
+#: /home/html/love/login.php:59
+msgid "You must enter a valid email!"
+msgstr "Du måste ange en giltig e-post!"
+
+#: /home/html/love/login.php:61
+msgid ""
+"There was an error with your login please check your username and password "
+"then, try again."
+msgstr ""
+"Det uppstod ett fel med din inloggning kan du kontrollera ditt användarnamn "
+"och lösenord sedan, försök igen."
+
+#: /home/html/love/login.php:71
+msgid "Blank username"
+msgstr "Blank användarnamn"
+
+#: /home/html/love/login.php:96
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: /home/html/love/login.php:97
+msgid "Email::"
+msgstr "E-post ::"
+
+#: /home/html/love/login.php:97
+msgid "Login with Facebook"
+msgstr "Logga in med Facebook"
+
+#: /home/html/love/login.php:97
+msgid "Retrieve it now"
+msgstr "Hämta det nu"
+
+#: /home/html/love/login.php:98
+msgid ""
+"Login to find someone!. If you do not already have an account you can "
+"register for one. Once you have registered you can come back here and login."
+msgstr ""
+"Logga in för att hitta någon !. Om du inte redan har ett konto kan du anmäla "
+"dig till en. När du har registrerat dig kan komma tillbaka hit och logga in."
+
+#: /home/html/love/login.php:99
+msgid "Onnea - connecting people"
+msgstr "Onnea - förenar människor"
+
+#: /home/html/love/login.php:99
+msgid "Enter your email and password to login."
+msgstr "Fyll i din e-post och lösenord för att logga in."
+
+#: /home/html/love/login.php:99
+msgid "Remember me next time!"
+msgstr "Kom ihåg mig nästa gång!"
+
+#: /home/html/love/login.php:99
+msgid "Forgot your password?"
+msgstr "Glömt ditt lösenord?"
+
+#: /home/html/love/reset.php:28
+msgid "You have successfully updated your password."
+msgstr "Du har uppdaterat ditt lösenord."
+
+#: /home/html/love/reset.php:32
+msgid "New password too short or not accepted."
+msgstr "Nytt lösenord för kort eller inte accepteras."
+
+#: /home/html/love/reset.php:35
+msgid "Your old password does not match."
+msgstr "Din gamla lösenord stämmer inte."
+
+#: /home/html/love/reset.php:52
+msgid ""
+"Your password has been reset, You will recieve an E-mail with your new "
+"password shortly."
+msgstr ""
+"Ditt lösenord har återställts, Du kommer att få ett e-postmeddelande med "
+"ditt nya lösenord inom kort."
+
+#: /home/html/love/reset.php:56
+msgid "Hi %USERNAME%, your password is %PASSWORD% <br /><br />Please login at %URL%"
+msgstr ""
+"Hej% ANVÄNDARNAMN% är ditt lösenord% LÖSENORD% <br /> <br /> Vänligen logga "
+"in på% URL%"
+
+#: /home/html/love/reset.php:59
+msgid "Forgotten username or password from %URL%"
+msgstr "Glömt användarnamn eller lösenord från% URL%"
+
+#: /home/html/love/reset.php:64
+msgid "That email do not exist as our user"
+msgstr "Denna e-post inte existera som våra användare"
+
+#: /home/html/love/reset.php:68
+msgid "You must provide a valid E-mail."
+msgstr "Du måste ange en giltig e-postadress."
+
+#: /home/html/love/reset.php:78
+msgid "Forgotten password"
+msgstr "Glömt lösenord"
+
+#: /home/html/love/reset.php:79
+msgid "Reset"
+msgstr "Återställ"
+
+#: /home/html/love/reset.php:80
+msgid ""
+"Did you forget your password? Provide us with the E-mail address you created "
+"your account with and your details will be sent to you."
+msgstr ""
+"Har du glömt lösenordet? Ge oss med E-postadressen du skapade kontot med och "
+"dina uppgifter kommer att skickas till dig."
+
+#: /home/html/love/reset.php:81
+msgid "Reset your forgotten password."
+msgstr "Återställa ditt bortglömda lösenord."
+
+#: /home/html/love/reset.php:82
+msgid "Change your password."
+msgstr "Byt lösenord."
+
+#: /home/html/love/reset.php:82
+msgid ""
+"Update your password here. Just enter your old password, and your new "
+"password."
+msgstr ""
+"Uppdatera ditt lösenord här. Skriv bara in ditt gamla lösenord, och ditt nya "
+"lösenord."
+
+#: /home/html/love/reset.php:83
+msgid "Change your existing password."
+msgstr "Ändra ditt befintliga lösenord."
+
+#: /home/html/love/reset.php:83
+msgid "Old Password"
+msgstr "gammalt lösenord"
+
+#: /home/html/love/reset.php:83
+msgid "New Password"
+msgstr "nytt lösenord"
+
+#: /home/html/love/index.php:15
+msgid "A very simple way finding someone!"
+msgstr "Ett mycket enkelt sätt att hitta någon!"
+
+#: /home/html/love/index.php:16
+msgid ""
+"You just click yes or no, if you get a yes back then you can decide to meet "
+"for a nice dinner."
+msgstr ""
+"Du klickar bara ja eller nej, om du får en ja då kan du välja att träffas "
+"för en trevlig middag."
+
+#: /home/html/love/index.php:17
+msgid "Search within 0-2000 kilometers from you. Dating & matchmaking made easy."
+msgstr "Sök inom 0-2000 kilometer från dig. Dating & matchmaking på ett enkelt sätt."
+
+#: /home/html/love/index.php:18
+msgid "Click here to download this on Google Play"
+msgstr "Klicka här för att ladda ner på Google Play"
+
+#: /home/html/love/index.php:19
+msgid "You get only one chance with everyone, so click carefully."
+msgstr "Du får bara en chans med alla, så klicka noggrant."
+

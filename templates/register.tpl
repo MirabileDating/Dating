@@ -15,10 +15,10 @@
 {{END success}}
 
 <fieldset>
-	<legend>{{LEGEND_NEW_REGISTER}}</legend>
+	<legend>{{A1}}</legend>
 		<form action="register.php" method="post">
-			<h2>{{REGISTER_DETAILS}}</h2>
-			<p{{IF $nickname_error}} class="error"{{END}}><label for="nickname">{{NICKNAME}}</label>
+			<h2>{{A2}}</h2>
+			<p{{IF $nickname_error}} class="error"{{END}}><label for="nickname">{{A3}}</label>
 			<input id="nickname" name="nickname" type="text" size="30" maxlength="30" value="{{$nickname}}" />
 			</p>
 

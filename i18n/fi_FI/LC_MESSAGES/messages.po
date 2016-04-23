@@ -1,0 +1,485 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "Like"
+msgstr "Kuten"
+
+#: /home/html/love/member2.php:19 /home/html/love/settings.php:83
+#: /home/html/love/member.php:19
+msgid "No"
+msgstr "Ei"
+
+#: /home/html/love/member2.php:21 /home/html/love/member.php:21
+msgid "No new profiles near you, look back later"
+msgstr "Ei uusia profiileja lähellä sinua, muistella myöhemmin"
+
+#: /home/html/love/register.php:43 /home/html/love/register.php:45
+msgid "Registered successfully"
+msgstr "Rekisteröity onnistuneesti"
+
+#: /home/html/love/register.php:59
+msgid "Give a valid name without space or special characters."
+msgstr "Anna kelvollinen nimi ilman tila tai erikoismerkkejä."
+
+#: /home/html/love/register.php:63
+msgid "Give a valid email."
+msgstr "Anna voimassa oleva sähköpostiosoite."
+
+#: /home/html/love/register.php:67
+msgid "That email is already in use."
+msgstr "Että sähköposti on jo käytössä."
+
+#: /home/html/love/register.php:71
+msgid "Invalid gender"
+msgstr "Virheellinen sukupuoli"
+
+#: /home/html/love/register.php:75
+msgid "Invalid password"
+msgstr "Väärä salasana"
+
+#: /home/html/love/register.php:79
+msgid "Invalid birthday"
+msgstr "Virheellinen syntymäpäivä"
+
+#: /home/html/love/register.php:103
+msgid "Register a new user"
+msgstr "Rekisteröi uusi käyttäjä"
+
+#: /home/html/love/register.php:104
+msgid ""
+"Before you can join, you must give your name, age and email. Your email can "
+"not be seen. Your name and age is visible. The password is sent to your "
+"email"
+msgstr ""
+"Ennen kuin voit liittyä, sinun täytyy antaa nimi, ikä ja sähköposti. "
+"Sähköpostiviesti ei voi nähdä. Nimesi ja ikä näkyy. Salasana lähetetään "
+"sähköpostiisi"
+
+#: /home/html/love/register.php:104
+msgid "Join now and find someone."
+msgstr "Liity nyt ja löytää joku."
+
+#: /home/html/love/register.php:105
+msgid ""
+"Register with <a href=\"http://www.facebook.com\">Facebook</a> or <a "
+"href=\"http://www.vk.com\">VK.com</a>."
+msgstr ""
+"Rekisteröidy <a href=\"http://www.facebook.com\"> Facebook </a> tai <a "
+"href=\"http://www.vk.com\"> VK.com </a>."
+
+#: /home/html/love/message.php:43
+msgid "Matches"
+msgstr "Yhteydet"
+
+#: /home/html/love/message.php:43
+msgid "Picture"
+msgstr "Kuva"
+
+#: /home/html/love/libs/register.php:109
+msgid "Welcome to Onnea - Dating"
+msgstr "Tervetuloa Onnea - Dating"
+
+#: /home/html/love/libs/message.php:69
+msgid "Messages:"
+msgstr "Viestit:"
+
+#: /home/html/love/libs/settings.php:39
+msgid "Women"
+msgstr "Naiset"
+
+#: /home/html/love/libs/settings.php:41
+msgid "Men"
+msgstr "Miehet"
+
+#: /home/html/love/libs/settings.php:43
+msgid "Both"
+msgstr "Molemmat"
+
+#: /home/html/love/libs/settings.php:115 /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "years from"
+msgstr "vuotta"
+
+#: /home/html/love/libs/matches.php:80
+#: /home/html/love/android/getMatches.php:111
+msgid "kilometers from you"
+msgstr "kilometrin päässä sinua"
+
+#: /home/html/love/libs/db.inc.php:22
+#: /home/html/love/android/libs/db.inc.php:22
+msgid "Failed to connect to the database"
+msgstr "Epäonnistui yhteyden tietokantaan"
+
+#: /home/html/love/libs/db.inc.php:26
+#: /home/html/love/android/libs/db.inc.php:26
+msgid "Could not find the database"
+msgstr "Ei löytänyt tietokantaa"
+
+#: /home/html/love/libs/member.php:42
+msgid " km from you"
+msgstr "km sinulta"
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - connect with someone."
+msgstr "Onnea - yhteyden jonkun kanssa."
+
+#: /home/html/love/libs/functions.php:804
+msgid "Onnea - dating"
+msgstr "Onnea - dating"
+
+#: /home/html/love/libs/functions.php:805
+msgid ""
+"online dating, dating, love, online sex, sex, free dating, android dating, "
+"matchmaking, mobile dating"
+msgstr ""
+"online dating, dating, rakkaus, online-sukupuoli, sukupuoli, Treffit, "
+"Android dating, matchmaking, mobiili dating"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Mirabile"
+msgstr "Mirabile"
+
+#: /home/html/love/libs/functions.php:805
+msgid "Start"
+msgstr "Alku"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Start page"
+msgstr "Etusivu"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Logout"
+msgstr "Kirjautua ulos"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Register"
+msgstr "Rekisteröidy"
+
+#: /home/html/love/libs/functions.php:806
+msgid "Login"
+msgstr "Kirjaudu sisään"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Menu"
+msgstr "Valikko"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Your matches"
+msgstr "Vastineet"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Messages"
+msgstr "Viestit"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Profile"
+msgstr "Profiili"
+
+#: /home/html/love/libs/functions.php:809
+msgid "Change password"
+msgstr "Vaihda salasana"
+
+#: /home/html/love/libs/functions.php:812 /home/html/love/index.php:15
+msgid "Onnea - connect with someone"
+msgstr "Onnea - yhteyden joku"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Copyright&copy;"
+msgstr "Copyright & copy;"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Contact us"
+msgstr "Ota meihin yhteyttä"
+
+#: /home/html/love/libs/functions.php:812
+msgid "http://www.onnea.net/love"
+msgstr "http://www.onnea.net/love"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Terms of Service"
+msgstr "Palveluehdot"
+
+#: /home/html/love/libs/functions.php:812
+msgid "Privacy Policy"
+msgstr "Tietosuojakäytäntö"
+
+#: /home/html/love/settings.php:85
+msgid "Your profile"
+msgstr "Profiilisi"
+
+#: /home/html/love/settings.php:85
+msgid "About you"
+msgstr "Sinusta"
+
+#: /home/html/love/settings.php:85
+msgid "About you:"
+msgstr "Sinusta:"
+
+#: /home/html/love/settings.php:85
+msgid "You search:"
+msgstr "Haet:"
+
+#: /home/html/love/settings.php:85
+msgid "Birthday:"
+msgstr "Syntymäpäivä:"
+
+#: /home/html/love/settings.php:85
+msgid "Save"
+msgstr "Tallenna"
+
+#: /home/html/love/settings.php:86
+msgid "Distance:"
+msgstr "Etäisyys:"
+
+#: /home/html/love/settings.php:86
+msgid "Age:"
+msgstr "Ikä:"
+
+#: /home/html/love/matches.php:25
+msgid "Matching profiles appears here when both click like"
+msgstr "Vastaavat profiilit näkyy tässä, kun molemmat klikkaa kuten"
+
+#: /home/html/love/matches.php:26
+msgid "Send message"
+msgstr "Lähetä viesti"
+
+#: /home/html/love/matches.php:26
+msgid "Remove"
+msgstr "Poistaa"
+
+#: /home/html/love/contact.php:26
+msgid "You successfully send the message to us"
+msgstr "Olet onnistuneesti lähettää viestin meille"
+
+#: /home/html/love/contact.php:32
+msgid "Please contact me"
+msgstr "Ota yhteyttä minuun"
+
+#: /home/html/love/contact.php:34
+msgid "I want to get the newsletter"
+msgstr "Haluan saada uutiskirjeen"
+
+#: /home/html/love/contact.php:80
+msgid "Name can not be empty"
+msgstr "Nimi ei voi olla tyhjä"
+
+#: /home/html/love/contact.php:107
+msgid "Onnea Contact Form at Onnea"
+msgstr "Onnea Yhteydenottolomake klo Onnea"
+
+#: /home/html/love/contact.php:107
+msgid "Online Contact Form."
+msgstr "Online Yhteydenottolomake."
+
+#: /home/html/love/contact.php:108
+msgid "Your name"
+msgstr "Sinun nimesi"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:79
+msgid "Your Email"
+msgstr "Sinun sähköpostisi"
+
+#: /home/html/love/contact.php:108
+msgid "Subject"
+msgstr "Aihe"
+
+#: /home/html/love/contact.php:108
+msgid "Message to us"
+msgstr "Viesti meille"
+
+#: /home/html/love/contact.php:108
+msgid "Code"
+msgstr "Koodi"
+
+#: /home/html/love/contact.php:108
+msgid "Enter Code"
+msgstr "Syötä koodi"
+
+#: /home/html/love/contact.php:108 /home/html/love/reset.php:83
+msgid "Submit"
+msgstr "Esittää"
+
+#: /home/html/love/contact.php:109
+msgid "* denotes a required field."
+msgstr "* Tarkoittaa pakollisen kentän."
+
+#: /home/html/love/contact.php:109
+msgid "Please Subscribe me to the newsletter."
+msgstr "Ole hyvä Tilaa minut uutiskirjeen."
+
+#: /home/html/love/contact.php:109
+msgid "Message you are sending."
+msgstr "Viesti olet lähettämässä."
+
+#: /home/html/love/contact.php:109
+msgid "Your Contact Details."
+msgstr "Yhteystietosi."
+
+#: /home/html/love/login.php:59
+msgid "You must enter a valid email!"
+msgstr "Sinun täytyy antaa voimassa oleva sähköpostiosoite!"
+
+#: /home/html/love/login.php:61
+msgid ""
+"There was an error with your login please check your username and password "
+"then, try again."
+msgstr ""
+"Oli virhe tunnuksesi tarkista käyttäjätunnuksesi ja salasanasi sitten, yritä "
+"uudelleen."
+
+#: /home/html/love/login.php:71
+msgid "Blank username"
+msgstr "Tyhjä Käyttäjätunnus"
+
+#: /home/html/love/login.php:96
+msgid "Password:"
+msgstr "Salasana:"
+
+#: /home/html/love/login.php:97
+msgid "Email::"
+msgstr "Sähköposti ::"
+
+#: /home/html/love/login.php:97
+msgid "Login with Facebook"
+msgstr "Kirjaudu Facebookissa"
+
+#: /home/html/love/login.php:97
+msgid "Retrieve it now"
+msgstr "Hae nyt"
+
+#: /home/html/love/login.php:98
+msgid ""
+"Login to find someone!. If you do not already have an account you can "
+"register for one. Once you have registered you can come back here and login."
+msgstr ""
+"Kirjaudu löytää joku !. Jos sinulla ei vielä ole tiliä, voit rekisteröityä "
+"yhden. Kun olet rekisteröitynyt, voit tulla takaisin tänne ja kirjaudu."
+
+#: /home/html/love/login.php:99
+msgid "Onnea - connecting people"
+msgstr "Onnea - yhdistää ihmisiä"
+
+#: /home/html/love/login.php:99
+msgid "Enter your email and password to login."
+msgstr "Anna sähköpostiosoitteesi ja salasanasi."
+
+#: /home/html/love/login.php:99
+msgid "Remember me next time!"
+msgstr "Muista minut ensi kerralla!"
+
+#: /home/html/love/login.php:99
+msgid "Forgot your password?"
+msgstr "Unohditko salasanasi?"
+
+#: /home/html/love/reset.php:28
+msgid "You have successfully updated your password."
+msgstr "Olet onnistuneesti päivittänyt salasanan."
+
+#: /home/html/love/reset.php:32
+msgid "New password too short or not accepted."
+msgstr "Uusi salasana liian lyhyt tai ei hyväksytä."
+
+#: /home/html/love/reset.php:35
+msgid "Your old password does not match."
+msgstr "Vanha salasana ei täsmää."
+
+#: /home/html/love/reset.php:52
+msgid ""
+"Your password has been reset, You will recieve an E-mail with your new "
+"password shortly."
+msgstr ""
+"Salasanasi on palautettu, Voit vastaanottaa Sähköposti uudella salasanallasi "
+"pian."
+
+#: /home/html/love/reset.php:56
+msgid "Hi %USERNAME%, your password is %PASSWORD% <br /><br />Please login at %URL%"
+msgstr ""
+"Hei% USERNAME%, salasana on% SALASANA% <br /> <br /> ole hyvä ja kirjaudu% "
+"URL%"
+
+#: /home/html/love/reset.php:59
+msgid "Forgotten username or password from %URL%"
+msgstr "Unohditko käyttäjätunnuksen tai salasanan% URL%"
+
+#: /home/html/love/reset.php:64
+msgid "That email do not exist as our user"
+msgstr "Että sähköposti ei ole meidän käyttäjä"
+
+#: /home/html/love/reset.php:68
+msgid "You must provide a valid E-mail."
+msgstr "Sinun on annettava kelvollinen sähköpostiosoite."
+
+#: /home/html/love/reset.php:78
+msgid "Forgotten password"
+msgstr "Unohtunut salasana"
+
+#: /home/html/love/reset.php:79
+msgid "Reset"
+msgstr "Asettaa uudelleen"
+
+#: /home/html/love/reset.php:80
+msgid ""
+"Did you forget your password? Provide us with the E-mail address you created "
+"your account with and your details will be sent to you."
+msgstr ""
+"Unohtuiko salasana? Meille sähköpostiosoite loit tilin ja tiedot lähetetään "
+"sinulle."
+
+#: /home/html/love/reset.php:81
+msgid "Reset your forgotten password."
+msgstr "Nollaa unohtuneen salasanan."
+
+#: /home/html/love/reset.php:82
+msgid "Change your password."
+msgstr "Vaihda salasanasi."
+
+#: /home/html/love/reset.php:82
+msgid ""
+"Update your password here. Just enter your old password, and your new "
+"password."
+msgstr "Päivitä salasanasi täällä. Kirjoita vain vanha salasana, ja uusi salasana."
+
+#: /home/html/love/reset.php:83
+msgid "Change your existing password."
+msgstr "Muuta nykyistä salasanaa."
+
+#: /home/html/love/reset.php:83
+msgid "Old Password"
+msgstr "vanha salasana"
+
+#: /home/html/love/reset.php:83
+msgid "New Password"
+msgstr "uusi salasana"
+
+#: /home/html/love/index.php:15
+msgid "A very simple way finding someone!"
+msgstr "Hyvin yksinkertainen tapa löytää joku!"
+
+#: /home/html/love/index.php:16
+msgid ""
+"You just click yes or no, if you get a yes back then you can decide to meet "
+"for a nice dinner."
+msgstr ""
+"Sinä vain klikkaa kyllä ​​tai ei, jos saat kyllä ​​silloin voit päättää "
+"tavata illallisen."
+
+#: /home/html/love/index.php:17
+msgid "Search within 0-2000 kilometers from you. Dating & matchmaking made easy."
+msgstr "Etsi sisältäen 0-2000km sinulta. Treffit & matchmaking tehty helpoksi."
+
+#: /home/html/love/index.php:18
+msgid "Click here to download this on Google Play"
+msgstr "Klikkaa tästä ladataksesi tämän Google Playssa"
+
+#: /home/html/love/index.php:19
+msgid "You get only one chance with everyone, so click carefully."
+msgstr "Saat vain yksi mahdollisuus kaikkien kanssa, joten valitse huolellisesti."
+
