@@ -78,6 +78,23 @@ DEFINE("SITE_LANGUAGE","$lang");
 DEFINE("DOCUMENT_CHARSET","utf-8");
 DEFINE("OAC_VER","v1.6.5");
 
+function viewOnPage($var)
+{
+	$output = '';
+	if (is_array($var)) {
+		foreach($var as $key => $val) {
+			$output[$key] = viewOnPage($val);
+    	}
+    } else {
+    	$var = htmlentities(trim($var), ENT_NOQUOTES, "UTF-8");
+		if (function_exists("get_magic_quotes_gpc")) {
+		   	$output = get_magic_quotes_gpc() ? stripslashes($var) : $var;
+		} else {
+			$output = $var;
+		}
+	}
+	return $output;
+}
 //Check if magic qoutes is on then stripslashes if needed
 function codeClean($var)
 {

@@ -20,7 +20,6 @@ function monthList() {
 	return $monthlist;
 }
 
-
 function yearList() {
 	$maxAge = "99";
 	$minAge = "18";
@@ -36,5 +35,10 @@ function yearList() {
 		$c++;
 	}
 	return $yearlist;
+}
+function isDateValid($year,$month,$day)
+{
+	$isValid = checkdate($month, $day, $year);
+	return $isValid;
 }
 ?>

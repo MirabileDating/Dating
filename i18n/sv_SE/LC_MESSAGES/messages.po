@@ -343,8 +343,8 @@ msgid "Password:"
 msgstr "Lösenord:"
 
 #: /home/html/love/login.php:97
-msgid "Email::"
-msgstr "E-post ::"
+msgid "Email"
+msgstr "E-post"
 
 #: /home/html/love/login.php:97
 msgid "Login with Facebook"
