@@ -103,4 +103,13 @@ a:active {
 	border-top: solid 1px #8ab573; /* Sets the top border properties for an element using shorthand notation */
 	padding: 10px 10px 10px 10px; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
 }
+.active {
+	font-style: italic;
+	font-weight: bold;
+   list-style:square;
+    color: red;
+font-size:14px;
+line-height:20px;
+}
+
 -->
