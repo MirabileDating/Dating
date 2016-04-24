@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 	require_once 'libs/functions.php';
 	require_once 'libs/register.php';
+	require_once 'libs/mail.inc.php';
 	$email_error=0;
 	$repeatemail_error=0;
 	$password_error=0;
@@ -15,6 +16,7 @@ ini_set('display_errors', 1);
 	$name="";
 	$gender=2;	
 	$day=0;
+	$birthdate=0;
 	$month=0;
 	$year=0;	
 	$secerror=0;
@@ -33,6 +35,7 @@ ini_set('display_errors', 1);
 			$name=viewOnPage($_POST["nickname"]);			
 			$email=viewOnPage($_POST["email"]);
 			$repeatemail=viewOnPage($_POST["repeatemail"]);
+	
 			if (isset($_POST["gender"])) $gender=viewOnPage($_POST["gender"]);
 			else {
 				$gender_error=1;
@@ -43,45 +46,61 @@ ini_set('display_errors', 1);
 				$errMess= $errMess.'<li>'._('Code is wrong').'</li>';
 				$secerror=1;
 			} 
-			
-			if ($_POST["nickname"] === "") 
+	
+			if ($name === "") 
 			{
 				$name_error=1;
 				$errMess= $errMess.'<li>'._('Name can not be empty').'</li>';
 			} 
-			if ($_POST["email"] === "") 
+						
+			if ($email === "") 
 			{
-				$errMess= $errMess.'<li>'._('Email can not be emprty or in wrong format').'</li>';
+				$errMess= $errMess.'<li>'._('Email can not be emprty').'</li>';
 				$email_error=1;
-			} 		
-			if ($_POST["repeatemail"] != $_POST["email"]) 
+			} elseif (!validateEmail($email)) {
+				$email_error=1;
+				$errMess= $errMess.'<li>'._('Email is in a wrong format').'</li>';
+			}
+			if ($email != $repeatemail) 
 			{
 				$errMess= $errMess.'<li>'._('Both email do not match').'</li>';
 				$repeatemail_error=1;
-		
 			} 
-
-			
-			if (!isDateValid ($_POST["year"],$_POST["month"],$_POST["day"]))	{
+	
+			if (!isDateValid ($year,$month,$day))	{
 				$birthday_error=1;
 				$errMess= $errMess.'<li>'._('Birthdate must be filled').'</li>';
-			} 
+			} else {
+				$birthdate = date("Y/m/d",mktime(0,0,0,$month,$day,$year));
+			}
 
 			if ($repeatemail_error ||$email_error ||$name_error || $secerror || $birthday_error) {
 				$error_message=_('Failed to create profile, please fix all fields marked with red');
 				$error_message=$error_message.'<br><ul>'.$errMess.'</ul>';
 			} else {
-				$success=_('Successfully created your new profile, check your email for password. (also check SPAM folder). Good luck with searching');
+				//Attempt to create profile
+				$res = registerUser($name, $email,$gender,$birthdate   );
+				switch ($res[0]) {
+					case 1:
+						$success=_('Successfully created your new profile, check your email for password. (also check SPAM folder). Good luck with searching');
+						break;
+					case 6:
+						$email_error=1;
+						$errMess= $errMess.'<li>'._('Email already exist as profile, choose a new email').'</li>';
+						break;
+				}
+				
 			}
-
+			if ($res>1) {
+				$error_message=_('Failed to create profile, please fix all fields marked with red');
+				$error_message=$error_message.'<br><ul>'.$errMess.'</ul>';
+			}	
 		} 
 		$T = new View('templates/register.tpl');
 		$yearlist=yearList();
 		$monthlist=monthList();
 		$daylist=dayList();			
 		$T->loadDefault(0);
-
-		
 
 		foreach ($yearlist as $i_name) {
 			$T->block('/yearlist', array('name' => $i_name["name"],'value'=>$i_name["value"]));
