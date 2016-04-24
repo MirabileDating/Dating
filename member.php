@@ -1,18 +1,21 @@
 <?php
+	ini_set('display_errors', 1);
+	require_once 'libs/functions.php';
+	//require_once 'libs/member.php';
+	$logged_in=0;
 
-require_once 'libs/functions.php';
-
-	if (isset($_SESSION["sessionid"]) && isloggedin($_SESSION["sessionid"])) {
+	if (isset($_SESSION["sessionid"]) && $myid=isloggedin($_SESSION["sessionid"])) {
+	
 		$logged_in=1;
-		header("Location: member.php");
-		return;
-	} else {
-
 		$T = new View('templates/member.tpl');
+		$T->loadDefault($logged_in,$myid);
 
-		$T->loadDefault(0);
 
-		echo $T->display(array('index' => 1,'A1'=>_('Onnea - dating')
-		));
+		echo $T->display(array('logged_in'=>$logged_in,'A1'=>_('No new profiles near you, look back later')
+			));	
+	} else {
+		header("Location: login.php");
+		return;
 	}
+
 ?>

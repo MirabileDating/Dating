@@ -147,7 +147,7 @@ function registerUser($name,  $email, $gender,$birthdate)
 	$imagelarge="";
 	$imagethumb="";
 	$image="";
-	$error = '';
+	
 	//todo work out better error handling routine
 	if (!validateName($name))	{
 		$error[] = 2;
@@ -243,12 +243,13 @@ function registerUser($name,  $email, $gender,$birthdate)
 		}
 		$ids=gen_uuid();
 		$sql = "INSERT INTO users ".
-		"(password, email, name,gender) ".
-		"VALUES ('$pass','$email', '$name', '$gender')"; 
-		echo $sql;
+		"(ids, password, email, name,gender,w_gender) ".
+		"VALUES ('$ids','$pass','$email', '$name', '$gender','$wantgender')"; 
+		
 		//
 		try {
 			$res = sqlQuery($sql); 
+			$error[] = 1;
 			$sql = "INSERT INTO userimages (imagethumb,image,imagebig,mainimage,idkey) VALUES ('$imagethumb','$image','$imagelarge',1,'$ids')";
 		//	$res = sqlQuery($sql); 	
 		} 
@@ -268,7 +269,7 @@ function registerUser($name,  $email, $gender,$birthdate)
 
 		
 		sendEmail($email,$subject,$body,$admin_name,$admin_email);
-		return 1;
+		return $error;
 	}
 }
 ?>

@@ -163,13 +163,10 @@ function logoff()
 	if (isset($_COOKIE[session_name()])) {
     	setcookie(session_name(), NULL, time()-3600);
 	}
-
-	// redirect them to anywhere you like.
-	//header("Location: login.php");
 }
 
 
-//last avtive
+//last active
 function lastActive($sessionid,$setlang)
 {
 
@@ -240,7 +237,7 @@ function lastActive($sessionid,$setlang)
 		if ($num > 0) {
 
 			//if check showed result then perform the update to the tables users and onlineusers
-			$sql = "UPDATE users,onlineusers SET onlineusers.user_referer = '$referer',users.lastactive = '" . $current_time . "', onlineusers.last_active = '" . $current_time . "' WHERE onlineusers.user_id = users.idkey AND session_id='$sessionid'";
+			$sql = "UPDATE users,onlineusers SET onlineusers.user_referer = '$referer',users.lastactive = '" . $current_time . "', onlineusers.last_active = '" . $current_time . "' WHERE onlineusers.user_id = users.ids AND session_id='$sessionid'";
 			
 
 		$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
@@ -249,9 +246,9 @@ function lastActive($sessionid,$setlang)
 
 	//perform some cleanup actions for the onlineusers table if visitor_tracking is enabled
 	
-		$sql = "DELETE FROM onlineusers WHERE last_active  < TIMESTAMPADD(HOUR,-3,NOW())";
+		$sql = "DELETE FROM onlineusers WHERE last_active  < TIMESTAMPADD(HOUR,-24,NOW())";
 		$del = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-	
+	print_r($_SESSION);
 	
 }
 

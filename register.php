@@ -8,6 +8,7 @@ ini_set('display_errors', 1);
 	$password_error=0;
 	$name_error=0;
 	$success="";
+	$res=0;
 	$birthday_error=0;
 	$gender_error=0;
 	$error_message="";
@@ -75,8 +76,7 @@ ini_set('display_errors', 1);
 			}
 
 			if ($repeatemail_error ||$email_error ||$name_error || $secerror || $birthday_error) {
-				$error_message=_('Failed to create profile, please fix all fields marked with red');
-				$error_message=$error_message.'<br><ul>'.$errMess.'</ul>';
+				//Do nothing
 			} else {
 				//Attempt to create profile
 				$res = registerUser($name, $email,$gender,$birthdate   );
@@ -91,7 +91,7 @@ ini_set('display_errors', 1);
 				}
 				
 			}
-			if ($res>1) {
+			if ($res<>1) {
 				$error_message=_('Failed to create profile, please fix all fields marked with red');
 				$error_message=$error_message.'<br><ul>'.$errMess.'</ul>';
 			}	
