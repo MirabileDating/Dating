@@ -248,7 +248,7 @@ function lastActive($sessionid,$setlang)
 	
 		$sql = "DELETE FROM onlineusers WHERE last_active  < TIMESTAMPADD(HOUR,-24,NOW())";
 		$del = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-	print_r($_SESSION);
+
 	
 }
 
