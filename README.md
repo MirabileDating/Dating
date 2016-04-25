@@ -1,5 +1,6 @@
-# PHP Dating script
+# PHP Dating script - release 10 may 2016.
 Online php dating script based on MariaDB/Mysql, PHP, Blitz template engine and geoip
+
 
 Feel free to join development
 

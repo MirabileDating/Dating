@@ -8,7 +8,7 @@
 </div>
 <div id="content">
 <hr size="1" />
-{{IF $logged_in}}
+{{IF $validtoken}}
 
   <h1>{{A1}}</h1>
 	<p>{{A11}}</p>
@@ -17,15 +17,15 @@
 <fieldset>
 	<legend>{{A7}}</legend>
 		<form method="post" action="reset.php">
-			<p {{IF $pass_error}}class="error"{{END}}><label for="old_pass">{{A10}}</label>
-			<input id="old_pass" name="old_pass" type="password" size="30" value="" />
+			<p {{IF $pass_error}}class="error"{{END}}><label for="password">{{A10}}</label>
+			<input id="password" name="password" type="password" size="30" value="" />
 			</p>
 			<div style="float:right;width:105px;margin-right:10px">
 				<div id="new_pass_text" style="font-size: xx-small;"></div>
 				<div id="new_pass_bar" style="font-size: xx-small; height: 2px; width: 0px; border: 1px solid white;"></div>
             </div>
-			<p><label for="new_pass">{{A9}}</label>
-			<input id="new_pass" name="new_pass" onKeyUp="runPassword(this.value, 'new_pass');" type="password" size="30" value="" />
+			<p><label for="password2">{{A9}}</label>
+			<input id="password2" name="password2" onKeyUp="runPassword(this.value, 'new_pass');" type="password" size="30" value="" />
 			</p>
 
 			<p><input type="submit" name="change" value="{{A8}}" /></p>

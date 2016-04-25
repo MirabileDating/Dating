@@ -3,8 +3,9 @@
 
 	require_once 'libs/functions.php';
 	require_once 'libs/reset.php';
-	require_once 'libs/login.php';
+	require_once 'libs/register.php';
 	require_once 'libs/mail.inc.php';
+	require_once 'libs/token.php';
 
 	//User is logged in and wants to change password
 	$success="";
@@ -41,24 +42,29 @@
 		if (validateEmail($_POST["email"])) {
 			$email = codeClean($_POST["email"]); 
 			  
-			$sql = "SELECT email FROM users WHERE email = '" . $email . "'";
+			$sql = "SELECT email,ids FROM users WHERE email = '" . $email . "'";
 			$res = sqlQuery($sql);// or die(sqlErrorReturn());
 			$a_row = sqlFetchArray($res);
 			$email = $a_row["email"];
 
 			if (!empty($email)) {
-				$pass = generatePassword(6);
-				updatePass($myid,$pass,$email);
-				$success=_('Your password has been reset, You will recieve an E-mail with your new password shortly.');
+				$token=gen_uuid();
+				$link ='https://www.onnea.net/dating/token.php?token='.$token;
+				//updatePass($myid,$pass,$email);
+				
 				$admin_name="Support";
 				$admin_email="support@onnea.net";
 				//build email to be sent from lang file
-				$body = preg_replace("!%USERNAME%!","$email",_('Hi %USERNAME%, your password is %PASSWORD% <br /><br />Please login at %URL%'));
-				$body = preg_replace("!%PASSWORD%!","$pass", $body);
-				$body = preg_replace("!%URL%!",""."http://www.onnea.net/love", $body);
-				$subject = preg_replace("!%URL%!","http://www.onnea.net/love",_('Forgotten username or password from %URL%'));
-
-				sendEmail($email,$subject,$body,$admin_name,$admin_email);
+				$body = preg_replace("!%USERNAME%!","$email",_('<br /><br />Hi %USERNAME%, click on %LINK% to set a new password.<br /><br />'));
+				$body = preg_replace("!%LINK%!","$link", $body);
+				$subject = preg_replace("!%URL%!","http://www.onnea.net/dating",_('Forgotten username or password from %URL%'));
+				if (storeToken($a_row["email"],$a_row["ids"],$token)) {
+					$success=_('You will soon recieve an E-mail with password change instructions.');				
+					sendEmail($email,$subject,$body,$admin_name,$admin_email);	
+				} else {
+					$error_message=_('You have already requested password reset, wait 1 hour between retries'); 
+				}
+				
 
 			} else {	
 				$error_message=_('That email do not exist as our user'); 

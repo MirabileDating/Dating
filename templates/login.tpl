@@ -8,7 +8,7 @@
 </div>
 <div id="content">
 
-
+<hr size="1" />
 
 
 <fieldset>
@@ -25,9 +25,10 @@
 			<p><input name="submit" type="submit" value="{{A3}}" /></p> 
 			<p><input type="checkbox"  value="1" name="remember" {{IF $formremember}}checked="checked"{{END}} />
 			{{A8}}<br />
-			{{A9}}</p>
+			<a href="reset.php">{{A9}}</a></p>
 		</form>
 </fieldset>
+
 {{IF $success}}
 	<p class="green"><strong>{{$success}}</strong></p>
 {{ELSEIF $error_message}}
