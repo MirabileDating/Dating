@@ -3,6 +3,7 @@
 {{IF logged_in}}
 <ul>
 	<li><a href="member.php">{{SH4}}</a></li>
+	<li><a href="reset.php">{{S9}}</a></li>
 	<li><a href="login.php?logoff">{{SH5}}</a></li>
 
 </ul>

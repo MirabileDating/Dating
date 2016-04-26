@@ -7,32 +7,61 @@
 	{{ include('templates/rightbar.tpl') }}
 </div>
 <div id="content">
-<hr size="1" />
-{{IF $logged_in}}
 
+
+{{IF $tokenphase}}
+{{IF $validtoken}}
+<hr size="1" />
   <h1>{{A1}}</h1>
-	<p>{{A11}}</p>
+	<p>{{A13}}</p>
 
 
 <fieldset>
 	<legend>{{A7}}</legend>
 		<form method="post" action="reset.php">
-			<p {{IF $pass_error}}class="error"{{END}}><label for="old_pass">{{A10}}</label>
-			<input id="old_pass" name="old_pass" type="password" size="30" value="" />
+			<p {{IF $pass_error}}class="error"{{END}}><label for="password1">{{A9}}</label>
+			<input id="password1" name="password1" type="password" size="30" value="" />
 			</p>
 			<div style="float:right;width:105px;margin-right:10px">
 				<div id="new_pass_text" style="font-size: xx-small;"></div>
 				<div id="new_pass_bar" style="font-size: xx-small; height: 2px; width: 0px; border: 1px solid white;"></div>
             </div>
-			<p><label for="new_pass">{{A9}}</label>
-			<input id="new_pass" name="new_pass" onKeyUp="runPassword(this.value, 'new_pass');" type="password" size="30" value="" />
+			<p><label for="password2">{{A12}}</label>
+			<input id="password2" name="password2" onKeyUp="runPassword(this.value, 'new_pass');" type="password" size="30" value="" />
+			</p>
+			<input id="token" name="token" type="hidden" size="32" value="{{$token}}" />
+			<p><input type="submit" name="submit" value="{{A8}}" /></p>
+		</form>
+</fieldset>
+{{END}}
+
+{{ELSEIF $logged_in}}
+{{UNLESS $success}}
+  <h1>{{A1}}</h1>
+	<p>{{A13}}</p>
+
+
+<fieldset>
+	<legend>{{A7}}</legend>
+		<form method="post" action="reset.php">
+			<p {{IF $pass_error}}class="error"{{END}}><label for="password1">{{A9}}</label>
+			<input id="password1" name="password1" type="password" size="30" value="" />
+			</p>
+			<div style="float:right;width:105px;margin-right:10px">
+				<div id="new_pass_text" style="font-size: xx-small;"></div>
+				<div id="new_pass_bar" style="font-size: xx-small; height: 2px; width: 0px; border: 1px solid white;"></div>
+            </div>
+			<p><label for="password2">{{A12}}</label>
+			<input id="password2" name="password2" onKeyUp="runPassword(this.value, 'password2');" type="password" size="30" value="" />
 			</p>
 
 			<p><input type="submit" name="change" value="{{A8}}" /></p>
 		</form>
 </fieldset>
+{{END}}
 {{ELSE}}
 
+{{UNLESS $success}}
   <h1>{{A3}}</h1>
 	<p>{{A5}}</p>
 	
@@ -48,7 +77,7 @@
 			<p><input type="submit" name="submit" value="{{A2}}" /></p>
 		</form>
 </fieldset>
-
+{{END}}
 {{END}}
 <hr size="1" />
 {{IF $success}}
