@@ -1,7 +1,7 @@
 <?php
 	ini_set('display_errors', 1);
 	require_once 'libs/functions.php';
-	require_once 'libs/member.php';
+	require_once 'libs/editmember.php';
 	$logged_in=0;
 
 	if (isset($_SESSION["sessionid"]) && $myid=isloggedin($_SESSION["sessionid"])) {
@@ -11,7 +11,7 @@
 		$profile=getProfile($myid);
 		
 		
-		$T = new View('templates/member.tpl');
+		$T = new View('templates/editmember.tpl');
 		$T->loadDefault($logged_in,$myid);
 
 		$T->setglobals(array(

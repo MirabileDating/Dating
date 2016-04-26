@@ -266,7 +266,7 @@ class View extends Blitz {
 			'H8'=>_('Start page'),'SH5'=>_('Logout'),'SH7'=>_('Register'),'SH6'=>_('Login')
 		 ));
 		 //Left Sidebar
-		$this->set(array('logged_in'=>$logged_in,'S1'=>_('Menu'),'S2' =>_('Your matches'),'S3'=>_('Messages'),'S7'=>_('Profile'),'S9'=>_('Change password')));
+		$this->set(array('logged_in'=>$logged_in,'S1'=>_('Menu'),'S2' =>_('Your matches'),'S3'=>_('Messages'),'S7'=>_('Edit Profile'),'S9'=>_('Change password'),'S10'=>_('Search')));
 
 		//Right Sidebar
 		$this->set(array('logged_in'=>$logged_in,'RS1'=>_('New profiles'),'RS2' =>_('Last Logged in'),'RS3' =>_('Need to be logged in')));
