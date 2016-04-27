@@ -3,7 +3,7 @@
 {{IF logged_in}}
 <ul>
 	<li {{IF member}} class="active"{{END register}}><a href="member.php">{{SH4}}</a></li>
-	<li {{IF editmember}} class="active"{{END register}}><a href="editmember.php">{{S7}}</a></li>
+	<li {{IF editprofile}} class="active"{{END register}}><a href="editmember.php">{{S7}}</a></li>
 	<li {{IF pictures}} class="active"{{END register}}><a href="pictures.php">{{S11}}</a></li>
 	<li {{IF search}} class="active"{{END register}}><a href="search.php">{{S10}}</a></li>
 	<hr size="1" />

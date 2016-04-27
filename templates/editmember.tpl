@@ -8,64 +8,64 @@
 </div>
 
 <div id="content">
-{{ BEGIN profile }}
+
 	<table width="600 "border="1">
 	<tr>
-	<td rowspan="7" width="30%">
-	</td>
-	<td width="40%">
-	{{A1}}: <b>{{approved}}</b>
-	</td>
+		<td width="30%">
+		{{A2}}
+		</td>
+		<td colspan="2" width="40%">
+	
+		</td>
+
+	</tr>
+	<tr>
 	<td>
-	{{A8}} {{w_gender}}
+	{{A3}}
+	</td>
+	<td colspan="2">
+	<input id="nickname" name="nickname" type="text" size="30" maxlength="30" value="{{$name}}" />
 	</td>
 	</tr>
 	<tr>
 	<td>
-	{{A6}}: <b>{{name}}</b>
+	{{A4}}: 
 	</td>
-	<td>
+	<td colspan="2">
+                <select style="width:160px" id="country" name="country" onchange="getStates(this);" size="1">
+				{{ BEGIN daylist }} 
+                    <option value="{{ value }}" {{IF value == $day}}selected="selected"{{END}}>{{ name }}  </option>					
+				{{ END daylist }}
+                </select>	
 	</td>
-	</tr>
-	<tr>
-	<td>
-	{{A7}}: <b>{{age}}</b>
-	</td>
-	<td>
-	</td>
+
 	</tr>
 
 	<tr>
 	<td>
 	
-	{{A2}}: <b>{{gender}}</b>
+	{{A5}}
 	</td>
-	<td>
-	</td>
+	<td colspan="2">
+                <select style="width:160px" id="state" name="state" onchange="getCities(country,this);" size="1">
+				{{ BEGIN yearlist }} 
+                    <option value="{{ value }}" {{IF value == $year}}selected="selected"{{END}}>{{ name }} </option>					
+				{{ END }}
+                </select>	
 	</tr>
 	<tr>
 	<td>
-	{{A3}}: <b>{{city}}</b>
+	{{A6}}
 	</td>
-	<td>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	{{A4}}: <b>{{state}}</b>
-	</td>
-	<td>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	{{A5}}: <b>{{country}}</b>
-	</td>
-	<td>
-	</td>
+	<td colspan="2">
+                <select style="width:160px" id="city" name="year" size="1">
+				{{ BEGIN yearlist }} 
+                    <option value="{{ value }}" {{IF value == $year}}selected="selected"{{END}}>{{ name }} </option>					
+				{{ END }}
+                </select>	
 	</tr>
 	</table>
-	{{ END profile }}
+
 </div>     
 <br class="clearFloat"/>
 </div>

@@ -14,6 +14,7 @@
 <base href="{{ OAC_SERVER_PATH }}" />
 <link href="styles/all.css" rel="stylesheet" type="text/css" media="all" />
 <link href="styles/print.css" rel="stylesheet" type="text/css" media="print" />
+{{if(editprofile,'<script type="text/javascript" src="js/jquery-1.12.3.js"></script><script type="text/javascript" src="js/common.js"></script>')}}
 </head>
 <body>
 
