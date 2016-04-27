@@ -9,7 +9,7 @@ Requirements
 Applications:
 *PHP > 5.4
 *Mysql/MariaDB
-*Ngingx/Apache
+*Nginx/Apache
 
 mods:
 *Blitz
