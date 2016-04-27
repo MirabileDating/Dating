@@ -17,6 +17,7 @@
 	<p class="red"><strong>{{$error_message}}</strong></p>
 {{END}}
 
+{{$ROOT_DIRECTORY}}
 	<p>
 	
 	
@@ -31,14 +32,16 @@
 			
 				<td>
 				<form name="modify" action="pictures.php" method="post">
-				<input type="hidden" name="id1" value="{{name.imagepath}}">
-				<input type="hidden" name="id2" value="{{name.homepath}}">
-				<a id="{{name.id}}" href="{{name.imagepath}}"><img name="{{name.id}}" id="{{name.id}}" src="{{name.imagethumbpath}}" data-title="{{name.title}}" data-description="{{name.description}}"></a><br>
+				<input type="hidden" name="image" value="{{name.image}}">
+				<input type="hidden" name="imagefull" value="{{name.imagefull}}">
+				<input type="hidden" name="imagethumb" value="{{name.imagethumb}}">
+				<input type="hidden" name="id" value="{{name.id}}">
+				<a id="{{name.id}}" href="{{name.image}}"><img name="{{name.id}}" id="{{name.id}}" src="{{wwwroot}}{{name.imagethumb}}" data-title="{{name.title}}" data-description="{{name.description}}"></a><br>
 				<input name="delete" type="submit" value="Delete"  /> <input name="makemain" type="submit" value="Make Main"  /> 
 				</form>
 				</td>
 			{{END}}
-				{{if(newrow,"<br>") }}
+				{{if($newrow,"<tr></tr>")}}
 			{{END}}
 			<tr>
 			</table>
@@ -57,9 +60,11 @@
 			{{IF name.id}}
 			<td>			
 			<form name="modify" action="pictures.php" method="post">
-				<input type="hidden" name="id1" value="{{name.imagepath}}">
-				<input type="hidden" name="id2" value="{{name.homepath}}">
-			<a id="{{name.id}}" href="{{name.imagepath}}"><img name="{{name.id}}" id="{{name.id}}" src="{{name.imagethumbpath}}" data-title="{{name.title}}" data-description="{{name.description}}"></a><br>
+				<input type="hidden" name="image" value="{{name.image}}">
+				<input type="hidden" name="imagefull" value="{{name.imagefull}}">
+				<input type="hidden" name="imagethumb" value="{{name.imagethumb}}">
+				<input type="hidden" name="id" value="{{name.id}}">
+			<a id="{{name.id}}" href="{{name.image}}"><img name="{{name.id}}" id="{{name.id}}" src="{{wwwroot}}{{name.imagethumb}}" data-title="{{name.title}}" data-description="{{name.description}}"></a><br>
 			<input name="delete" type="submit" value="Delete"  /> 
 			</form>
 			</td>

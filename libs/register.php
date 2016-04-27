@@ -207,14 +207,14 @@ function registerUser($name,  $email, $gender,$birthdate)
 		$pass = generatePassword(6);
 
 		//$body = preg_replace("!%USERNAME%!", "$email", ACCT_SIGNUP_BODY);
-		$body = __('Hi %1$s. <br/>Your password is %2$s. <br/><br/>Please login at %3$s',$name,$pass,'http://www.onnea.net/dating');
+		$body = __('Hi %1$s. <br/>Your password is %2$s. <br/><br/>Please login at %3$s',$name,$pass,SERVERURL.WWWROOT);
 	
 		//build email to be sent from lang file
 		$body = preg_replace("!%PASSWORD%!", "$pass", $body);
 		//$body = preg_replace("!%URL%!", "$site_url/login.php", $body);
 		$body = preg_replace("!%URL%!", OAC_SERVER_PATH."login.php", $body);
 		//$subject = preg_replace("!%URL%!", "$site_url", _('Welcome to Soccer manager'));
-		$subject = preg_replace("!%URL%!", OAC_SERVER_PATH, _('Welcome to Onnea - Dating'));
+		$subject = preg_replace("!%URL%!", OAC_SERVER_PATH, _('Welcome to').TITLE);
 		$subject = preg_replace("!%USERNAME%!", "$email", $subject);
 		//The last part of the email is at the bottom!!
 

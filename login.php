@@ -52,7 +52,7 @@
 		echo $T->display(array('logout'=>$logoff,'login' => 1,'email_error'=>$email_error,'error_message'=>$error_message,'formremember'=>$formremember,'password'=>$pass,'email'=>$email,'A5'=>_('Password:')
 		,'A4'=>_('Email/Name'),'A10'=>_('Retrieve it now'),'A3'=>_('Login')
 		,'A2'=>_('Login to find someone!. If you do not already have an account you can register for one. Once you have registered you can come back here and login.')
-		,'A1'=>_('Onnea - dating'),'A7'=>_('Enter your email and password to login.'),'A8'=>_('Remember me next time!'),'A9'=>_('Forgot your password?')
+		,'A1'=>TITLE,'A7'=>_('Enter your email and password to login.'),'A8'=>_('Remember me next time!'),'A9'=>_('Forgot your password?')
 
 		));
 	}

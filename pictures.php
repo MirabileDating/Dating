@@ -2,6 +2,7 @@
 	ini_set('display_errors', 1);
 	require_once 'libs/functions.php';
 	require_once 'libs/pictures.php';
+	require_once 'libs/member.php';
 	$logged_in=0;
 	$irows=0;
 	$error_message="";
@@ -12,17 +13,18 @@
 
 	if (isset($_SESSION["sessionid"]) && $myid=isloggedin($_SESSION["sessionid"]) ) {
 		$logged_in=1;
-		//$userinfo=getUserInfo($myid);
+		$userinfo=getProfile($myid);
 		
 		if (isset($_POST["makemain"]))  {
-			if (makemainUserImage($myid,$_POST["id1"])) {
+			if (makemainUserImage($myid,$_POST["imagefull"],$_POST["image"],$_POST["imagethumb"])) {
 				$success=_('You changed main picture');
 			} else {
 				$error_message=_('Failed to set new main picture');
 			}
 		}
 		if (isset($_POST["delete"]))  {
-			if (deleteUserImage($myid,$_POST["id1"])) {
+		
+			if (deleteUserImage($myid,$_POST["id"])) {
 				$success=_('Deleted picture');
 			} else {
 				$error_message=_('Delete error');
@@ -46,9 +48,10 @@
 		$T->loadDefault($logged_in);
 		
 		
-	/*	foreach (sqlGetUserImages($myid,0) as $i_name) {
+		foreach (sqlGetUserImages($myid,0) as $i_name) {
 			$irows++;
 			if ($irows == 3) {
+	
 					$irows=0;
 					$newrow=true;
 			} else {
@@ -66,9 +69,12 @@
 			$newrow=false;
 			}
 			$T->block('/galleryprivimg', array('name' => $i_name,'newrow'=>$newrow));
-		}*/
-		echo $T->display(array('logged_in'=>$logged_in,'folderlist'=>folderlist(),'error_message'=>$error_message,'success'=>$success,'SUBMIT'=>_('Save picture'),
-				'EDIT_PROFILE_IMAGE_LEGEND'=>_('Upload pictures'),'YOUR_IMAGE'=>_('Your image'),'IMGTITLE'=>_('Image title'),'IMGDESC'=>_('Image description'),'FOLDER'=>_('Folder')
+		}
+		echo $T->display(array(
+			'logged_in'=>$logged_in,'pictures'=>1,'folderlist'=>folderlist(),'error_message'=>$error_message
+			,'success'=>$success,'SUBMIT'=>_('Save picture'),'EDIT_PROFILE_IMAGE_LEGEND'=>_('Upload pictures')
+			,'YOUR_IMAGE'=>_('Your image'),'IMGTITLE'=>_('Image title'),'IMGDESC'=>_('Image description')
+			,'FOLDER'=>_('Folder')
 			));
 
 

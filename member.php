@@ -15,7 +15,7 @@
 		$T->loadDefault($logged_in,$myid);
 
 		$T->setglobals(array(
-			'logged_in'=>$logged_in,'A1'=>_('Profile status'), 'A2'=>_('Gender'), 'A3'=>_('City'), 'A4'=>_('State'), 'A5'=>_('Country'), 'A6'=>_('Name'),'A7'=>_('Age'),'A8'=>_('Looking for a')
+			'logged_in'=>$logged_in,'member'=>1,'A1'=>_('Profile status'), 'A2'=>_('Gender'), 'A3'=>_('City'), 'A4'=>_('State'), 'A5'=>_('Country'), 'A6'=>_('Name'),'A7'=>_('Age'),'A8'=>_('Looking for a')
 		));	
 		echo $T->display(array(
 			'profile'=>$profile

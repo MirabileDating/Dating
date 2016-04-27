@@ -2,14 +2,14 @@
 
 {{IF logged_in}}
 <ul>
-	<li><a href="member.php">{{SH4}}</a></li>
-	<li><a href="editmember.php">{{S7}}</a></li>
-	<li><a href="pictures.php">{{S11}}</a></li>
-	<li><a href="search.php">{{S10}}</a></li>
+	<li {{IF member}} class="active"{{END register}}><a href="member.php">{{SH4}}</a></li>
+	<li {{IF editmember}} class="active"{{END register}}><a href="editmember.php">{{S7}}</a></li>
+	<li {{IF pictures}} class="active"{{END register}}><a href="pictures.php">{{S11}}</a></li>
+	<li {{IF search}} class="active"{{END register}}><a href="search.php">{{S10}}</a></li>
 	<hr size="1" />
-	<li><a href="reset.php">{{S9}}</a></li>
+	<li {{IF reset}} class="active"{{END register}}><a href="reset.php">{{S9}}</a></li>
 	<hr size="1" />
-	<li><a href="login.php?logoff">{{SH5}}</a></li>
+	<li {{IF logoff}} class="active"{{END register}}><a href="login.php?logoff">{{SH5}}</a></li>
 
 </ul>
 {{ELSE}}

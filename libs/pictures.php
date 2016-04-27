@@ -7,28 +7,16 @@ function folderlist() {
 	if (isset($folderlist))
 		return $folderlist;
 }
-function makemainUserImage($uid, $imageid)
+function makemainUserImage($uid, $imagefull,$image,$imagethumb)
 {
 	
-	if (!empty($uid) && !empty($imageid) ) {
-		$sql = "UPDATE userimages SET mainimage=0 WHERE userid = $uid and mainimage = 1";	
-		$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
+	if (!empty($image)) {
 	
-	}
-	
-	if (!empty($imageid)) {
-	
-		$sql = "UPDATE userimages SET mainimage=1 WHERE userid = $uid and imagepath = '$imageid'";
-		
-		$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-
-		// If everything OK AND IS MAIN IMAGE; select any remaining secondary and mark it as main
 			
-			$sql = "UPDATE users INNER JOIN userimages ON (users.id = userimages.userid and userimages.mainimage=1 and userimages.userid=$uid) SET users.imagepath = userimages.imagepath, users.imagethumbpath=userimages.imagethumbpath";
+			$sql = "UPDATE users SET image = '$image', imagefull='$imagefull', imagethumb='$imagethumb' WHERE ids='$uid'";
 			
 			$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 
-		//if the listing image was not the mainimage return true for delete record
 		return 99;
 	} else {
 		return false;
@@ -39,14 +27,13 @@ function deleteUserImage($uid, $imageid)
 	
 	if (!empty($uid) && !empty($imageid) ) {
 		//look up image path then remove the files before preceding
-		$sql = "SELECT imagepath,mainimage FROM userimages WHERE userid = $uid and imagepath = '$imageid'";
+		$sql = "SELECT image FROM userimages WHERE idkey = '$uid' and id = '$imageid'";
 		
 		$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 		$num = sqlNumRows($res);
 		if (!empty($num)) {
 			$row = sqlFetchAssoc($res);
-			$imagepath = $row["imagepath"];
-			$isMainImage = $row["mainimage"];
+			$imagepath = $row["image"];
 			$imagethumbpath = str_replace(".","_thumb.",$imagepath);
 		} else {
 			return false;
@@ -55,72 +42,20 @@ function deleteUserImage($uid, $imageid)
 	
 	if (!empty($imagepath)) {
 	
-		unlink("/home/html$imagepath");
-		unlink("/home/html$imagethumbpath");
+		unlink($imagepath);
+		unlink($imagethumbpath);
 
-		$sql = "DELETE FROM userimages WHERE userid = $uid and imagepath = '$imageid'";
+		$sql = "DELETE FROM userimages WHERE idkey = '$uid' and id = '$imageid'";
 		
 		$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 
-		// If everything OK AND IS MAIN IMAGE; select any remaining secondary and mark it as main
-		if ($isMainImage) {
-			$sql = "UPDATE users set imagepath = '', imagethumbpath = '' WHERE id = $uid";
-
-			$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-
-			//$num = sqlNumRows($res);
-
-			if ($num == 0) {
-				// Nothing else to do .. get out of here!
-				return 99;
-			} 
-		} else {
-			
-		}
 		//if the listing image was not the mainimage return true for delete record
 		return 99;
 	} else {
 		return false;
 	}
 }
-function sqlGetUserImages($userid,$private) {
 
-	$sql = "SELECT * FROM userimages WHERE userid = '" . $userid . "' and private='" . $private . "' ORDER BY mainimage desc";
-
-	$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-	$c=0;
-	while ($a_row = sqlFetchArray($res)) {
-		if ($a_row["private"]=="1") {
-			$records[$c]["id"] = $a_row["id"];
-			$records[$c]["imagepath"] = $a_row["imagepath"];
-			$records[$c]["imagethumbpath"] = $a_row["imagethumbpath"];
-			$records[$c]["title"] = $a_row["title"];
-			$records[$c]["description"] = $a_row["description"];
-		} else {
-			$records[$c]["id"] = $a_row["id"];
-			$records[$c]["imagepath"] = $a_row["imagepath"];
-			$records[$c]["imagethumbpath"] = $a_row["imagethumbpath"];
-			$records[$c]["title"] = $a_row["title"];
-			$records[$c]["description"] = $a_row["description"];
-		}
-
-		++$c;
-	}
-	
-	sqlFreeResult($res);
-
-		if (!empty($records)) {
-			return $records;
-		}	else {
-			$records[0]["title"]  ="No image";
-			$records[0]["description"] ="This user have no image.<br><a href='useredit.php'>".ADD_PROFILE_IMAGE."</a>";
-			$records[0]["imagepath"] = "/images/no_user.jpg";
-			$records[0]["imagethumbpath"] = "/images/no_user.jpg";
-			return $records;
-		}
-
-
-}
 
 function openImage($file)
 {
@@ -279,7 +214,7 @@ function checkAllowedExt($file)
 
 function uploadUserImage($file, $tmpfile, $max, $userid,$private,$title,$description)
 {
-		/*
+		
 	$uniquepath=md5(date('Y-m-d H:i:s:u'));
        if (empty($file))
           return false;
@@ -294,11 +229,11 @@ function uploadUserImage($file, $tmpfile, $max, $userid,$private,$title,$descrip
 	$filenr = time();
 	$ext = pathinfo($file, PATHINFO_EXTENSION);
 	$filename = "$filenr.$ext";
-	$urldir=getMemberdir($uniquepath);
+	$urldir=getMemberdir($userid);
 	 
 // MOVE
 
-	$image_path = "/home/html" . $urldir;
+	$image_path = $urldir;
 	$image_fullpath = $image_path . $filename;
 
 	if (move_uploaded_file($tmpfile, $image_fullpath)) {
@@ -316,21 +251,15 @@ function uploadUserImage($file, $tmpfile, $max, $userid,$private,$title,$descrip
 // MOVE
 	if (!empty($filename)) {
 		
-					
-		$sql = "SELECT COUNT( * )  as NR FROM userimages where userid='$userid' and mainimage=1";
-		$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-		$row = sqlFetchAssoc($res);
-		$filenr = intval($row['NR']);
+				
 		
-		if ($filenr==0 && $private==0) {
-			$sql = "UPDATE users SET imagepath = '" . $urldir.$filename . "', imagethumbpath = '" . $urldir.$thumbname . "' , approved=0 WHERE id = '" . $userid . "' ";
+		if ($private==0) {
+			$sql = "UPDATE users SET image = '" . $urldir.$filename . "', imagethumb = '" . $urldir.$thumbname . "' WHERE ids = '" . $userid . "' ";
 			
 			$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-			$mainimage = "mainimage=1,";
-		} else {
-			$mainimage="";
-		}
-			$sql = "INSERT INTO userimages SET $mainimage private='$private', description='$description', title='$title', imagethumbpath = '" . $urldir.$thumbname . "', imagepath = '" . $urldir.$filename . "', userid = '" . $userid . "' ";
+			
+		} 
+			$sql = "INSERT INTO userimages SET private='$private', description='$description', title='$title', imagethumb = '" . $urldir.$thumbname . "', image = '" . $urldir.$filename . "', idkey = '" . $userid . "' ";
 			$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 
 		if ($res) {
@@ -338,7 +267,7 @@ function uploadUserImage($file, $tmpfile, $max, $userid,$private,$title,$descrip
 		} else {
 		}
 	}
-	*/
+	
 	return false;
 }
 

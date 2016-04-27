@@ -12,7 +12,7 @@ require_once 'libs/functions.php';
 
 		$T->loadDefault(0);
 
-		echo $T->display(array('index' => 1,'A1'=>_('Onnea - dating')
+		echo $T->display(array('index' => 1,'A1'=>TITLE
 		));
 	}
 ?>

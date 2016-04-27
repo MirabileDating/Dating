@@ -3,8 +3,8 @@ ini_set('display_errors', 1);
 $site_lang="";
 if (!isset($_SESSION)) {
 	session_name('love');
-	ini_set('session.cookie_domain', '.onnea.net');
-	ini_set('session.save_path', '/tmp');
+	ini_set('session.cookie_domain', DOMAIN);
+	ini_set('session.save_path', TEMPDIR);
 	session_start();
 }
 function current_page_url(){

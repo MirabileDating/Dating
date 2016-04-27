@@ -1,47 +1,40 @@
 <?PHP
-function getProfile($userid) {
-		
-	$sql = "select name,city,state,country,gender,blocked,birthdate, w_gender from users where ids='$userid' limit 1";
-	
+function sqlGetUserImages($userid,$private) {
+
+	$sql = "SELECT * FROM userimages WHERE idkey = '" . $userid . "' and private='" . $private . "' ";
+
 	$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
-
-	
+	$c=0;
 	while ($a_row = sqlFetchArray($res)) {
+		if ($a_row["private"]=="1") {
+			$records[$c]["id"] = $a_row["id"];
+			$records[$c]["image"] = $a_row["image"];
+			$records[$c]["imagethumb"] = $a_row["imagethumb"];
+			$records[$c]["title"] = $a_row["title"];
+			$records[$c]["description"] = $a_row["description"];
+		} else {
+			$records[$c]["id"] = $a_row["id"];
+			$records[$c]["image"] = $a_row["image"];
+			$records[$c]["imagethumb"] = $a_row["imagethumb"];
+			$records[$c]["title"] = $a_row["title"];
+			$records[$c]["description"] = $a_row["description"];
+		}
 
-		 
-		$records["name"] = $a_row["name"];
-		$records["city"] = $a_row["city"];
-		$records["state"] = $a_row["state"];
-		$records["country"] = $a_row["country"];
-		if ($a_row["gender"] ==1) 
-			$gender=_("Male");
-		else 
-			$gender=_("Female");
-		if ($a_row["blocked"] ==0) 
-			$approved=_("Approved");
-		else 
-			$approved=_("Waiting for approval before getting listed");		
-		$from = new DateTime( $a_row["birthdate"]);
-		$to   = new DateTime('today');
-		
-		$records["gender"] = $gender;
-	    $records["approved"] = $approved;
-		$records["age"] = $from->diff($to)->y." "._("years");
-
-
-		if ($a_row["w_gender"] ==1) 
-			$gender=_("Male");
-		else 
-			$gender=_("Female");
-		$records["w_gender"] = $gender;
-		
-		
+		++$c;
 	}
-
+	
 	sqlFreeResult($res);
 
-	if (!empty($records)) {
-		return $records;
-	}
+		if (!empty($records)) {
+			return $records;
+		}	else {
+			$records[0]["title"]  ="No image";
+			$records[0]["description"] ="This user have no image.<br><a href='useredit.php'>"._('Add as Main image')."</a>";
+			$records[0]["image"] = "/images/no_user.jpg";
+			$records[0]["imagethumb"] = "/images/no_user.jpg";
+			return $records;
+		}
+
+
 }
 ?>

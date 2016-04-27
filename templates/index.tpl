@@ -7,7 +7,7 @@
 	{{ include('templates/rightbar.tpl') }}
 </div>
 <div id="content">
-
+{{A1}}
 </div>     
 <br class="clearFloat"/>
 </div>

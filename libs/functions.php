@@ -95,6 +95,61 @@ function viewOnPage($var)
 	}
 	return $output;
 }
+function getProfile($userid) {
+		
+	$sql = "select name,city,state,country,gender,blocked,image,imagethumb,imagefull,birthdate, w_gender from users where ids='$userid' limit 1";
+	
+	$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
+
+	
+	while ($a_row = sqlFetchArray($res)) {	 
+		$records["name"] = $a_row["name"];
+		$records["city"] = $a_row["city"];
+		$records["state"] = $a_row["state"];
+		$records["country"] = $a_row["country"];
+		
+		
+		$image = $a_row["image"];
+		$image = ($image=="")?"images/male.png":"$image";		
+		$imagefull = $a_row["imagefull"];
+		$imagefull = ($imagefull=="")?"images/male.png":"$imagefull";		
+		$imagethumb = $a_row["imagethumb"];
+		$imagethumb = ($imagethumb=="")?"images/male.png":"$imagethumb";		
+		
+		$records["image"] =$image;
+		$records["imagethumb"] = $imagethumb;
+		$records["imagefull"] = $imagefull;
+
+		if ($a_row["gender"] ==1) 
+			$gender=_("Male");
+		else 
+			$gender=_("Female");
+		if ($a_row["blocked"] ==0) 
+			$approved=_("Approved");
+		else 
+			$approved=_("Waiting for approval before getting listed");		
+		$from = new DateTime( $a_row["birthdate"]);
+		$to   = new DateTime('today');
+		
+		$records["gender"] = $gender;
+	    $records["approved"] = $approved;
+		$records["age"] = $from->diff($to)->y." "._("years");
+
+
+		if ($a_row["w_gender"] ==1) 
+			$gender=_("Male");
+		else 
+			$gender=_("Female");
+		$records["w_gender"] = $gender;
+				
+	}
+
+	sqlFreeResult($res);
+
+	if (!empty($records)) {
+		return $records;
+	}
+}
 function getMemberdir($homepage) {
 
 
@@ -117,7 +172,7 @@ function getMemberdir($homepage) {
     		}
     	}
     }
-    return "/users/".$user_dir[5];
+    return "users/".$user_dir[5];
 
 }
 //Check if magic qoutes is on then stripslashes if needed
@@ -279,15 +334,15 @@ function lastActive($sessionid,$setlang)
 
 class View extends Blitz {
 
-    function View($tmpl_name) {
+    function Views($tmpl_name) {
 		return parent::Blitz($tmpl_name);
     }
 	function loadDefault($logged_in,$myid=0) {
 		//Header
 		global $android;
 		$this->set(array('android'=>$android,'SITE_LANGUAGE' => SITE_LANGUAGE,'DOCUMENT_CHARSET' => DOCUMENT_CHARSET, 'OAC_SERVER_PATH' => OAC_SERVER_PATH,
-			'H1'=>_('Onnea - dating.'), 'H2'=>_('Onnea - dating'),
-			'H3'=>_('online dating, dating, love, online sex, sex, free dating, android dating, matchmaking, mobile dating'),'H9'=>_('Mirabile'),  'SH4'=>_('Start'),
+			'H1'=>TITLE, 'H2'=>TITLE,
+			'H3'=>_('online dating, dating, love, online sex, sex, free dating, android dating, matchmaking, mobile dating'),TITLE,  'SH4'=>_('Start'),
 			'H8'=>_('Start page'),'SH5'=>_('Logout'),'SH7'=>_('Register'),'SH6'=>_('Login')
 		 ));
 		 //Left Sidebar
@@ -297,7 +352,7 @@ class View extends Blitz {
 		$this->set(array('logged_in'=>$logged_in,'RS1'=>_('New profiles'),'RS2' =>_('Last Logged in'),'RS3' =>_('Need to be logged in')));
 
 		//Footer
-		$this->set(array('F1'=>_('Onnea - dating'),'F3' => _('Copyright&copy;'),'F4' => _('Contact us'),'F2' => _('http://www.onnea.net/dating'),'F5' => _('Terms of Service'),'F6' => _('Privacy Policy')));
+		$this->set(array('F1'=>TITLE,'F3' => _('Copyright&copy;'),'F4' => _('Contact us'),'F2' => SERVERURL,'F5' => _('Terms of Service'),'F6' => _('Privacy Policy')));
 	}
 }
 

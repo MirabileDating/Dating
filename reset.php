@@ -92,15 +92,15 @@
 
 				if (!empty($email)) {
 					$token=gen_uuid();
-					$link ='https://www.onnea.net/dating/reset.php?token='.$token;
+					$link ='http://'.SERVERURL.WWWROOT.'/reset.php?token='.$token;
 					//updatePass($myid,$pass,$email);
 					
-					$admin_name="Support";
-					$admin_email="support@onnea.net";
+					$admin_name=EMAILNAME;
+					$admin_email=EMAIL;
 					//build email to be sent from lang file
 					$body = preg_replace("!%USERNAME%!","$email",_('<br /><br />Hi %USERNAME%, click on %LINK% to set a new password.<br /><br />'));
 					$body = preg_replace("!%LINK%!","$link", $body);
-					$subject = preg_replace("!%URL%!","http://www.onnea.net/dating",_('Forgotten username or password from %URL%'));
+					$subject = preg_replace("!%URL%!",SERVERURL.WWWROOT,_('Forgotten username or password from %URL%'));
 					if (storeToken($a_row["email"],$a_row["ids"],$token)) {
 						$success=_('You will soon recieve an E-mail with password change instructions.');				
 						sendEmail($email,$subject,$body,$admin_name,$admin_email);	
@@ -127,7 +127,7 @@
 	$T->setglobals(array('token'=>$token
 	));
 	echo $T->display(array('A3' => _('Forgotten password')
-		,'tokenphase'=>$tokenphase,'validtoken'=>$validtoken
+		,'tokenphase'=>$tokenphase,'validtoken'=>$validtoken,'reset'=>1
 		,'A2' => _('Reset'),'A4' => _('Your Email'),'error' => $error
 		,'A5' => _('Did you forget your password? Provide us with the E-mail address you created your account with and your details will be sent to you.')
 		,'A6' => _('Reset your forgotten password.'),'error_message' => $error_message,'success' => $success,'index' => 1, 'logged_in'=>$logged_in

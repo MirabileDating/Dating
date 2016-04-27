@@ -11,6 +11,11 @@ class MySQLDuplicateKeyException extends MySQLException {}
 $socket="/run/mysqld/mysqld.sock";
 define('DOMAIN', '.onnea.net');
 define('TEMPDIR', '/tmp');
+define('TITLE', 'Onnea - Dating');
+define('EMAILNAME', 'support');
+define('EMAIL', 'support@onnea.net');
+define('SERVERURL', 'http://www.onnea.net');
+define('ROOTDIR', '/home/html/dating/');
 $port=0;
 $dbhost = "p:localhost";
 $dbuser = "dating";

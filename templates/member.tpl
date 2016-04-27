@@ -12,11 +12,12 @@
 	<table width="600 "border="1">
 	<tr>
 	<td rowspan="7" width="30%">
+	<img src="{{imagethumb}}"/>
 	</td>
-	<td width="40%">
+	<td width="35%">
 	{{A1}}: <b>{{approved}}</b>
 	</td>
-	<td>
+	<td width="35%">
 	{{A8}} {{w_gender}}
 	</td>
 	</tr>
