@@ -37,7 +37,7 @@
 				<input type="hidden" name="imagethumb" value="{{name.imagethumb}}">
 				<input type="hidden" name="id" value="{{name.id}}">
 				<a id="{{name.id}}" href="{{name.image}}"><img name="{{name.id}}" id="{{name.id}}" src="{{wwwroot}}{{name.imagethumb}}" data-title="{{name.title}}" data-description="{{name.description}}"></a><br>
-				<input name="delete" type="submit" value="Delete"  /> <input name="makemain" type="submit" value="Make Main"  /> 
+				{{if(!$mainpic,"<input name='delete' type='submit' value='Delete'  /> <input name='makemain' type='submit' value='Make Main'/>")}}
 				</form>
 				</td>
 			{{END}}

@@ -13,7 +13,7 @@
 
 	if (isset($_SESSION["sessionid"]) && $myid=isloggedin($_SESSION["sessionid"]) ) {
 		$logged_in=1;
-		$userinfo=getProfile($myid);
+		
 		
 		if (isset($_POST["makemain"]))  {
 			if (makemainUserImage($myid,$_POST["imagefull"],$_POST["image"],$_POST["imagethumb"])) {
@@ -47,7 +47,7 @@
 		$T = new View('templates/pictures.tpl');
 		$T->loadDefault($logged_in);
 		
-		
+		$userinfo=getProfile($myid);
 		foreach (sqlGetUserImages($myid,0) as $i_name) {
 			$irows++;
 			if ($irows == 3) {
@@ -55,13 +55,16 @@
 					$irows=0;
 					$newrow=true;
 			} else {
-			$newrow=false;
+				$newrow=false;
 			}
-			$T->block('/gallerypubimg', array('name' => $i_name,'newrow'=>$newrow));
+			if ($i_name['imagethumb']===$userinfo['imagethumb']) $mainpic=1;
+			else $mainpic=0;
+			$T->block('/gallerypubimg', array('name' => $i_name,'newrow'=>$newrow,'mainpic'=>$mainpic));
 		}
 		$irows=0;
 		foreach (sqlGetUserImages($myid,1) as $i_name) {
 			$irows++;
+		
 			if ($irows == 3) {
 					$irows=0;
 					$newrow=true;
@@ -79,7 +82,7 @@
 
 
 	} else {
-		//header("Location: login.php");
+		header("Location: login.php");
 		return;
 	}
 ?>
