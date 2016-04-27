@@ -108,22 +108,27 @@ function getProfile($userid) {
 		$records["state"] = $a_row["state"];
 		$records["country"] = $a_row["country"];
 		
+		$gender=$a_row["gender"];
+		$pictype=($gender=="")?"male":"female";	
+		if ($gender == 1) 
+			$gender=_("Male");
+		else 
+			$gender=_("Female");	
+		
+		
 		
 		$image = $a_row["image"];
-		$image = ($image=="")?"images/male.png":"$image";		
+		$image = ($image=="")?"images/$pictype.png":"$image";		
 		$imagefull = $a_row["imagefull"];
-		$imagefull = ($imagefull=="")?"images/male.png":"$imagefull";		
+		$imagefull = ($imagefull=="")?"images/$pictype.png":"$imagefull";		
 		$imagethumb = $a_row["imagethumb"];
-		$imagethumb = ($imagethumb=="")?"images/male.png":"$imagethumb";		
+		$imagethumb = ($imagethumb=="")?"images/$pictype.png":"$imagethumb";		
 		
 		$records["image"] =$image;
 		$records["imagethumb"] = $imagethumb;
 		$records["imagefull"] = $imagefull;
 
-		if ($a_row["gender"] ==1) 
-			$gender=_("Male");
-		else 
-			$gender=_("Female");
+
 		if ($a_row["blocked"] ==0) 
 			$approved=_("Approved");
 		else 

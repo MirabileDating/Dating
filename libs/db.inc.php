@@ -15,7 +15,7 @@ define('TITLE', 'Onnea - Dating');
 define('EMAILNAME', 'support');
 define('EMAIL', 'support@onnea.net');
 define('SERVERURL', 'http://www.onnea.net');
-define('ROOTDIR', '/home/html/dating/');
+define('WWWROOT', '/dating/');
 $port=0;
 $dbhost = "p:localhost";
 $dbuser = "dating";

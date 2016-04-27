@@ -268,8 +268,8 @@ function registerUser($name,  $email, $gender,$birthdate)
 		}
 		$ids=gen_uuid();
 		$sql = "INSERT INTO users ".
-		"(ids, password, email, name, birthdate, gender,w_gender, city, state, country, userip) ".
-		"VALUES ('$ids','$pass','$email', '$name', '$birthdate', '$gender','$wantgender','$GEOIP_CITY','$GEOIP_REGION_NAME','$GEOIP_COUNTRY_NAME','$ip')"; 
+		"(ids, password, email, name, birthdate, gender,w_gender, city, state, country, userip,longitude,latitude) ".
+		"VALUES ('$ids','$pass','$email', '$name', '$birthdate', '$gender','$wantgender','$GEOIP_CITY','$GEOIP_REGION_NAME','$GEOIP_COUNTRY_NAME','$ip','$GEOIP_LONGITUDE','$GEOIP_LATITUDE')"; 
 		
 		//
 		try {

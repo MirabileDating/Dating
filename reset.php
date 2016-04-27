@@ -92,7 +92,7 @@
 
 				if (!empty($email)) {
 					$token=gen_uuid();
-					$link ='http://'.SERVERURL.WWWROOT.'/reset.php?token='.$token;
+					$link =SERVERURL.WWWROOT.'/reset.php?token='.$token;
 					//updatePass($myid,$pass,$email);
 					
 					$admin_name=EMAILNAME;
