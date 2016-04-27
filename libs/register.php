@@ -8,6 +8,31 @@ function dayList() {
 	}
 	return $daylist;
 }
+function createMemberdir($homepage) {
+
+
+    $dir_1 = substr($homepage, 0,2);
+    $dir_2 = substr($homepage, 2,2);
+    $dir_3 = substr($homepage, 4,2);
+    $dir_4 = substr($homepage, 6,2);
+    $dir_5 = substr($homepage, 8,2);
+
+    $user_dir[0] = $dir_1 . "/";
+    $user_dir[1] = $user_dir[0] . $dir_2 . "/";
+    $user_dir[2] = $user_dir[1] . $dir_3 . "/";
+	$user_dir[3] = $user_dir[2] . $dir_4 . "/";
+	$user_dir[4] = $user_dir[3] . $dir_5 . "/";
+    $user_dir[5] = $user_dir[4] . $homepage . "/";
+    foreach ($user_dir as $this_dir) {
+    	if (!is_dir("users/$this_dir")) { // directory doesn't exist
+    		if (!mkdir("users/$this_dir", 0777)) { // attempt to make it with read, write, execute permissions
+    			return false; // bug out if it can't be created
+    		}
+    	}
+    }
+    return "/users/".$user_dir[5];
+
+}
 
 function monthList() {
 
@@ -249,6 +274,7 @@ function registerUser($name,  $email, $gender,$birthdate)
 		//
 		try {
 			$res = sqlQuery($sql); 
+			createMemberdir($ids);
 			$error[] = 1;
 			$sql = "INSERT INTO userimages (imagethumb,image,imagebig,mainimage,idkey) VALUES ('$imagethumb','$image','$imagelarge',1,'$ids')";
 		//	$res = sqlQuery($sql); 	
@@ -271,5 +297,34 @@ function registerUser($name,  $email, $gender,$birthdate)
 		sendEmail($email,$subject,$body,$admin_name,$admin_email);
 		return $error;
 	}
+}
+function create_member_dirs($homepage) {
+
+
+    $dir_1 = substr($homepage, 0,2);
+    $dir_2 = substr($homepage, 2,2);
+    $dir_3 = substr($homepage, 4,2);
+    $dir_4 = substr($homepage, 6,2);
+    $dir_5 = substr($homepage, 8,2);
+
+    $user_dir[0] = $dir_1 . "/";
+    $user_dir[1] = $user_dir[0] . $dir_2 . "/";
+    $user_dir[2] = $user_dir[1] . $dir_3 . "/";
+	$user_dir[3] = $user_dir[2] . $dir_4 . "/";
+	$user_dir[4] = $user_dir[3] . $dir_5 . "/";
+    $user_dir[5] = $user_dir[4] . $homepage . "/";
+
+
+    foreach ($user_dir as $this_dir) {
+    	if (!is_dir("users/$this_dir")) { // directory doesn't exist
+    		if (!mkdir("users/$this_dir", 0777)) { // attempt to make it with read, write, execute permissions
+    			return false; // bug out if it can't be created
+    		}
+    	}
+    }
+
+    // if we've got to here all directories exist or have been created so all good
+    return $user_dir[5];
+
 }
 ?>

@@ -95,6 +95,31 @@ function viewOnPage($var)
 	}
 	return $output;
 }
+function getMemberdir($homepage) {
+
+
+    $dir_1 = substr($homepage, 0,2);
+    $dir_2 = substr($homepage, 2,2);
+    $dir_3 = substr($homepage, 4,2);
+    $dir_4 = substr($homepage, 6,2);
+    $dir_5 = substr($homepage, 8,2);
+
+    $user_dir[0] = $dir_1 . "/";
+    $user_dir[1] = $user_dir[0] . $dir_2 . "/";
+    $user_dir[2] = $user_dir[1] . $dir_3 . "/";
+	$user_dir[3] = $user_dir[2] . $dir_4 . "/";
+	$user_dir[4] = $user_dir[3] . $dir_5 . "/";
+    $user_dir[5] = $user_dir[4] . $homepage . "/";
+    foreach ($user_dir as $this_dir) {
+    	if (!is_dir("users/$this_dir")) { // directory doesn't exist
+    		if (!mkdir("users/$this_dir", 0777)) { // attempt to make it with read, write, execute permissions
+    			return false; // bug out if it can't be created
+    		}
+    	}
+    }
+    return "/users/".$user_dir[5];
+
+}
 //Check if magic qoutes is on then stripslashes if needed
 function codeClean($var)
 {
@@ -266,7 +291,7 @@ class View extends Blitz {
 			'H8'=>_('Start page'),'SH5'=>_('Logout'),'SH7'=>_('Register'),'SH6'=>_('Login')
 		 ));
 		 //Left Sidebar
-		$this->set(array('logged_in'=>$logged_in,'S1'=>_('Menu'),'S2' =>_('Your matches'),'S3'=>_('Messages'),'S7'=>_('Edit Profile'),'S9'=>_('Change password'),'S10'=>_('Search')));
+		$this->set(array('logged_in'=>$logged_in,'S1'=>_('Menu'),'S2' =>_('Your matches'),'S3'=>_('Messages'),'S7'=>_('Edit Profile'),'S9'=>_('Change password'),'S10'=>_('Search'),'S11'=>_('Upload picture')));
 
 		//Right Sidebar
 		$this->set(array('logged_in'=>$logged_in,'RS1'=>_('New profiles'),'RS2' =>_('Last Logged in'),'RS3' =>_('Need to be logged in')));
