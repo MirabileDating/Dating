@@ -1,6 +1,11 @@
 <?PHP
 ini_set('display_errors', 1);
+	require_once 'libs/functions.php';
+	
+	$_POST = codeClean($_POST);
+	$_GET = codeClean($_GET);	
 $site_lang="";
+
 if (!isset($_SESSION)) {
 	session_name('love');
 	ini_set('session.cookie_domain', DOMAIN);

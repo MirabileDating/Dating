@@ -1,7 +1,7 @@
 <?php
-
-
 	require_once '/home/html/dating/libs/functions.php';
+	$_POST = codeClean($_POST);
+	$_GET = codeClean($_GET);
 	$country=$_GET['country'];
 	$sql = "SELECT regionname,region FROM regions,countries WHERE countries.countryname = '$country' and regions.country=countries.country order by regionname";
 	$data = array();

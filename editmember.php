@@ -12,7 +12,8 @@ function dayList() {
 	return $daylist;
 }	
 	$logged_in=0;
-
+	$_POST = codeClean($_POST);
+	$_GET = codeClean($_GET);
 	if (isset($_SESSION["sessionid"]) && $myid=isloggedin($_SESSION["sessionid"])) {
 	
 		$logged_in=1;

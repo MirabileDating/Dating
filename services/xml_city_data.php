@@ -1,5 +1,7 @@
 <?php
 	require_once '/home/html/dating/libs/functions.php';
+	$_POST = codeClean($_POST);
+	$_GET = codeClean($_GET);	
 	$country=$_GET['country'];
 	$state=$_GET['state'];
 	

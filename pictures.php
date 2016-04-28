@@ -7,6 +7,8 @@
 	$irows=0;
 	$error_message="";
 	$success="";
+	$_POST = codeClean($_POST);
+	$_GET = codeClean($_GET);	
 	if (isset($_GET["erri"]) && $_GET["erri"]) {
 			$error_message=_('Max error');
 	}	

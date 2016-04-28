@@ -2,6 +2,8 @@
 	require_once 'libs/functions.php';
 	require_once 'libs/login.php';
 	$logoff=0;
+	$_POST = codeClean($_POST);
+	$_GET = codeClean($_GET);	
 	if (isset($_GET["logoff"]) || isset($_POST["logoff"])) {
 		$logoff=1;
 		logoff();
