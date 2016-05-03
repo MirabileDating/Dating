@@ -5,7 +5,7 @@
 	$country=$_GET['country'];
 	$state=$_GET['state'];
 	
-	$sql = "SELECT locId,city FROM cities,regions,countries WHERE regions.region = '$state' and countries.countryname = '$country' and regions.region = cities.region and cities.country = countries.country and regions.country=countries.country order by city";	
+	$sql = "SELECT locId,city FROM cities,regions,countries WHERE regions.regionname = '$state' and countries.countryname = '$country' and regions.region = cities.region and cities.country = countries.country and regions.country=countries.country order by city";	
 	$data = array();
 	$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 

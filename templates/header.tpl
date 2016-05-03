@@ -22,3 +22,10 @@
   <div id="header">
 	<center>PHP dating script</center>
   </div>
+<div id="contentWrapper">
+<div id="leftColumn1">  
+	{{ include('templates/leftbar.tpl') }}
+</div>
+<div id="rightColumn1">
+	{{ include('templates/rightbar.tpl') }}
+</div>
