@@ -109,6 +109,7 @@ function getProfile($userid) {
 		$records["country"] = $a_row["country"];
 		
 		$gender=$a_row["gender"];
+		$records["genderid"] = $gender;
 		$pictype=($gender==1)?"male_noimg_large":"female";	
 
 		if ($gender == 1) 

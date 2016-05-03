@@ -88,6 +88,7 @@
 			<input name="submit" type="submit" value="{{A7}}" /><br />
 			</td></tr>	
 	</table>
+	</form>
 </fieldset>
 </div>     
 <br class="clearFloat"/>
