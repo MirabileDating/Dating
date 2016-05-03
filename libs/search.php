@@ -72,11 +72,11 @@ class Pager {
 
 function getSearchList($genderid) {
 	$searchlist[0]["name"] = _("Male"); 
-	$searchlist[0]["value"] = "0";
+	$searchlist[0]["value"] = "1";
 	$searchlist[1]["name"] = _("Female"); 
-	$searchlist[1]["value"] = "1";
+	$searchlist[1]["value"] = "0";
 	$searchlist[2]["name"] = _("Couple"); 
-	$searchlist[2]["value"] = "2";
+	$searchlist[2]["value"] = "3";
 	return $searchlist;
 }
 function getAgeList($fromage) {
@@ -93,7 +93,7 @@ function getAgeList($fromage) {
 	}
 	return $agelist;
 }
-function searchUsers($id='all', $page, $distance,$fromage,$toage,$myid,$data='')
+function searchUsers($id='all', $page, $distance,$fromage,$toage,$lookingfor,$data='')
 {
 	
 	$count = '';
@@ -106,7 +106,7 @@ function searchUsers($id='all', $page, $distance,$fromage,$toage,$myid,$data='')
 	$latitude=0;
 	$gender=0;
 	$uid=0;
-	$lookingfor=1;
+
 
 	if (intval($page) > PAGER::MAXRANGE) { $page=PAGER::MAXRANGE;}
 	if (intval($page) < 0) { $page=1;}
@@ -162,7 +162,9 @@ function searchUsers($id='all', $page, $distance,$fromage,$toage,$myid,$data='')
 	while ($a_row = sqlFetchArray($res)) {
 	
 		$records[$c]["id"] = $a_row["id"];
+		$records[$c]["name"] = $a_row["name"];
 		$records[$c]["distance"] = $a_row["distance"];
+		$records[$c]["image"] = $a_row["image"];
 	++$c;
 	}
 	sqlFreeResult($res);

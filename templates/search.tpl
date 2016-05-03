@@ -12,7 +12,7 @@
 	<td width="30%">
 					<select style="width:140px" id="gender" name="gender" onchange="getStates(this);" size="1">
 					{{ BEGIN searchlist}}
-						<option value="{{name}}">{{name}}</option>
+						<option value="{{value}}">{{name}}</option>
 					{{ END }}	
 					</select>
 	</td>
@@ -24,7 +24,7 @@
 					{{ END }}	
 					</select>
 					-					
-					<select style="width:60px" id="toage" name="tpage" onchange="getStates(this);" size="1">
+					<select style="width:60px" id="toage" name="toage" onchange="getStates(this);" size="1">
 					{{ BEGIN toagelist}}
 						<option value="{{value}}">{{value}}</option>
 					{{ END }}	
@@ -43,6 +43,7 @@
 	</form>
 	</fieldset>
 	{{ BEGIN listdata }}
+		<img src="{{image}}" alt="{{name}}" style="width:88px;height:88px;"/>
 		Distance from you: {{distance}} km	<br>
 	{{ END listdata }}	
 {{paginator}} 	

@@ -14,11 +14,32 @@
 	} else {
 		$data="";
 	}		
+	if (isset($_GET['page'])) {
+		$page=$_GET['page'];
+	} else {
+		$page=1;
+	}		
+	if (isset($_POST['fromage'])) {
+		$fromage=$_POST['fromage'];
+	} else {
+		$fromage=18;
+	}		
+	if (isset($_POST['toage'])) {
+		$toage=$_POST['toage'];
+	} else {
+		$toage=110;
+	}		
+	if (isset($_POST['gender'])) {
+		$gender=$_POST['gender'];
+	} else {
+		$gender=110;
+	}		
+	print_r($_POST);
 		$profile=getProfile($myid);
 		$searchlist=getSearchList($genderid);
 		$fromagelist=getAgeList(true);
 		$toagelist=getAgeList(false);
-		$listdata=searchUsers('all',1,10000,18,99,0,$data);
+		$listdata=searchUsers('all',$page,1000000,$fromage,$toage,$gender,$data);
 		
 		$T = new View('templates/search.tpl');
 		$T->loadDefault($logged_in,$myid);		
