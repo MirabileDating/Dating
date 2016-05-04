@@ -32,15 +32,20 @@
 	if (isset($_POST['gender'])) {
 		$gender=$_POST['gender'];
 	} else {
-		$gender=110;
+		$gender=0;
 	}		
-	print_r($_POST);
+	if (isset($_GET['gender'])) {
+		$gender=$_GET['gender'];
+	} 	
+
 		$profile=getProfile($myid);
 		$searchlist=getSearchList($genderid);
 		$fromagelist=getAgeList(true);
 		$toagelist=getAgeList(false);
-		$listdata=searchUsers('all',$page,1000000,$fromage,$toage,$gender,$data);
-		
+		$longitude=$profile['longitude'];
+		$latitude=$profile['latitude'];
+		$listdata=searchUsers('all',$page,$longitude,$latitude,$fromage,$toage,$gender,$data);
+
 		$T = new View('templates/search.tpl');
 		$T->loadDefault($logged_in,$myid);		
 			if (!empty($listdata)) {
@@ -54,7 +59,7 @@
 
 		
 		$T->setglobals(array(
-			
+			'gender'=>$gender,'fromage'=>$fromage,'toage'=>$toage
 		));	
 		echo $T->display(array(
 			'profile'=>$profile

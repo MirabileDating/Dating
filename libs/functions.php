@@ -97,7 +97,7 @@ function viewOnPage($var)
 }
 function getProfile($userid) {
 		
-	$sql = "select name,city,state,country,gender,blocked,image,imagethumb,imagefull,birthdate, w_gender from users where ids='$userid' limit 1";
+	$sql = "select name,city,state,latitude,longitude,country,gender,blocked,image,imagethumb,imagefull,birthdate, w_gender from users where ids='$userid' limit 1";
 	
 	$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 
@@ -107,6 +107,8 @@ function getProfile($userid) {
 		$records["city"] = $a_row["city"];
 		$records["state"] = $a_row["state"];
 		$records["country"] = $a_row["country"];
+		$records["longitude"] = $a_row["longitude"];
+		$records["latitude"] = $a_row["latitude"];
 		
 		$gender=$a_row["gender"];
 		$records["genderid"] = $gender;

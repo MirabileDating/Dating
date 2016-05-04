@@ -93,17 +93,13 @@ function getAgeList($fromage) {
 	}
 	return $agelist;
 }
-function searchUsers($id='all', $page, $distance,$fromage,$toage,$lookingfor,$data='')
+function searchUsers($id='all', $page, $longitude,$latitude,$fromage,$toage,$lookingfor,$data='')
 {
 	
 	$count = '';
 	$sqlgender="";
 	$sqlage ="";
 	
-	//$userdata = getUserInfo($myid);
-	
-	$longitude =0;
-	$latitude=0;
 	$gender=0;
 	$uid=0;
 
@@ -128,11 +124,9 @@ function searchUsers($id='all', $page, $distance,$fromage,$toage,$lookingfor,$da
 		$page_limits = "LIMIT ". PAGER::getInstance()->startpage($page). ", ".PAGER::getInstance()->endpage();
 	}
 	
-	if (!is_numeric($distance)) {
+
 		$distance ="WHERE $sqlgender AND (w_gender=$gender OR w_gender=2) AND users.id<>$uid AND $sqlage order by distance";
-	} else {
-		$distance = "HAVING distance <= $distance AND $sqlgender AND (w_gender=$gender OR w_gender=2) AND users.id<>$uid AND $sqlage order by distance";
-	}
+
 	
 	if(!empty($data)) {
 		$distance= base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
@@ -155,7 +149,7 @@ function searchUsers($id='all', $page, $distance,$fromage,$toage,$lookingfor,$da
 		PAGER::getInstance()->setsql($distance);
 		sqlFreeResult($count_res);
 	}	
-	echo $sql;
+	
 	$res = sqlQuery($sql); if(sqlErrorReturn()) sqlDebug(__FILE__,__LINE__,sqlErrorReturn());
 	
 	$c=0;

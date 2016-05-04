@@ -12,7 +12,7 @@
 	<td width="30%">
 					<select style="width:140px" id="gender" name="gender" onchange="getStates(this);" size="1">
 					{{ BEGIN searchlist}}
-						<option value="{{value}}">{{name}}</option>
+						<option value="{{value}}" {{IF value==gender}}selected="selected"{{END}}>{{name}}</option>
 					{{ END }}	
 					</select>
 	</td>
@@ -20,13 +20,13 @@
 	<td width="30%">
 					<select style="width:60px" id="fromage" name="fromage" onchange="getStates(this);" size="1">
 					{{ BEGIN fromagelist}}
-						<option value="{{value}}">{{value}}</option>
+						<option value="{{value}}" {{IF value==fromage}}selected="selected"{{END}}>{{value}}</option>
 					{{ END }}	
 					</select>
 					-					
 					<select style="width:60px" id="toage" name="toage" onchange="getStates(this);" size="1">
 					{{ BEGIN toagelist}}
-						<option value="{{value}}">{{value}}</option>
+						<option value="{{value}}" {{IF value==toage}}selected="selected"{{END}}>{{value}}</option>
 					{{ END }}	
 					</select>	
 	
@@ -41,11 +41,13 @@
 
 	</table>
 	</form>
-	</fieldset>
+	
+	<hr size="1" />
 	{{ BEGIN listdata }}
 		<img src="{{image}}" alt="{{name}}" style="width:88px;height:88px;"/>
 		Distance from you: {{distance}} km	<br>
 	{{ END listdata }}	
+	<hr size="1" />
 {{paginator}} 	
 {{ITEMS}} {{$paginate.first}} - {{$paginate.last}} {{OF}} {{$paginate.total}} {{DISPLAYED}}
 </p>
@@ -56,6 +58,7 @@
 			</p>
 
 	</div>	
+	</fieldset>
 </div>     
 <br class="clearFloat"/>
 </div>
